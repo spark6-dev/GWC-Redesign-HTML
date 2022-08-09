@@ -44,12 +44,24 @@ function more_portfolio_ajax(){
         $loop = new WP_Query($args);
         $out = '';
         if ($loop -> have_posts()) :  //$count = 0;
-        	while ($loop -> have_posts()) : $loop -> the_post(); 
+        	while ($loop -> have_posts()) : $loop -> the_post(); //$count++;
+                // if($count==1){
+                //     $hover_class = "filter--lake";
+                // }elseif($count==2){
+                //     $hover_class = "filter--lawn";
+                // }elseif($count==3){
+                //     $hover_class = "filter--violet";
+                //     $count = 0;
+                // }
                 $title    = get_the_title();
                 $tags     = get_the_terms( get_the_ID(), 'company_category' ); 
                 if ( ! empty( $tags ) ) {
                     $tag = $tags[0]->name;   
                 }
+                // $locs     = get_the_terms( get_the_ID(), 'location' ); 
+                // if ( ! empty( $locs ) ) {
+                //     $loc = $locs[0]->name;   
+                // }
                 $link                       = get_field('link');
                 $location_country_state     = get_field('locationcountrystate');
             	$out .= '<div class="filter__box">

@@ -9248,6 +9248,9 @@ $(".l-accordion__title ").on("click", function (e) {
 
 // goal animation for desktop starts here
 $(window).on("load", function () {
+  ScrollTrigger.normalizeScroll(true);
+
+  let normalizer = ScrollTrigger.normalizeScroll();
   if (window.matchMedia("(min-width: 992px)").matches) {
     let gwcLogoPos = {};
     let gwcLogoWidth = 0;
@@ -9262,7 +9265,7 @@ $(window).on("load", function () {
           trigger: ".gwc.goal",
           pin: ".gwc.goal",
           scrub: 1,
-          start: "-=15%",
+          start: "-=10%",
           end: "+=300%",
         },
       });
@@ -9363,7 +9366,7 @@ $(window).on("load", function () {
         }, "<");
     }
 
-    $(".goal__link").hover(function () {
+    $(".goal__link").click(function () {
       $(".goal__link").removeClass("is-hover");
       $(".goal__pwrap").removeClass("is-hover");
       var dataType = $(this).attr("data-type");
@@ -9376,7 +9379,7 @@ $(window).on("load", function () {
       );
     });
 
-    $(".goal__pwrap").hover(function () {
+    $(".goal__pwrap").click(function () {
       $(".goal__link").removeClass("is-hover");
       $(".goal__pwrap").removeClass("is-hover");
       var dataType = $(this).attr("data-type");

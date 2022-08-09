@@ -14,20 +14,21 @@
 
 get_header();
 ?>
-
-<div class="gwc banner banner--inner">
-    <div class="banner__wrap">
-      	<div class="container">
-      		<span class="l-banner"><?php echo esc_html(get_the_title());?></span>
-      		<?php if( get_field('banner_heading') ):?>
-	            <div class="banner__details">
-	              	<?php echo apply_filters('the_content',get_field('banner_heading')); ?>
-	            </div>
-	        <?php endif;?>
-      	</div>
+<?php if(get_field('banner_heading')):?>
+    <div class="gwc banner banner--inner">
+        <div class="banner__wrap">
+          	<div class="container">
+          		<span class="l-banner"><?php echo esc_html(get_the_title());?></span>
+          		<?php if( get_field('banner_heading') ):?>
+    	            <div class="banner__details">
+    	              	<?php echo apply_filters('the_content',get_field('banner_heading')); ?>
+    	            </div>
+    	        <?php endif;?>
+          	</div>
+        </div>
     </div>
-</div>
- <div class="standard-text">
+<?php endif;?>
+<div class="standard-text">
     <div class="container">
         <?php echo apply_filters('the_content',get_the_content()); ?>
     </div>
