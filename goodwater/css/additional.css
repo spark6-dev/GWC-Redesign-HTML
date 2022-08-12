@@ -41,3 +41,10 @@ footer.footer-text {
   }
 }
 
+@media screen and (max-width: 990px) {
+  .gwc.reach.reach--capital .reach__wrap .reach__thumb {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
