@@ -1,4 +1,8 @@
-<div class="gwc manifesto manifesto--capital">
+<?php if( $args['class'] ){
+    $class_name = $args['class'];
+    $button_on_left = $args['button_on_left'];
+}?>
+<div class="gwc manifesto <?php echo $class_name;?>">
     <div class="container container--full">
         <?php if( get_field('tcti2-label') ):?>
             <div class="span l-caption"><?php echo esc_html(get_field('tcti2-label'));?></div>

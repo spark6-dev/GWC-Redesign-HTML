@@ -18,7 +18,7 @@ get_header(); ?>
 <!-- Cards Section -->
 <?php get_template_part('template-parts/inner-page/cards'); ?>
 <!-- Reach Section -->
-<?php get_template_part('template-parts/inner-page/two-col-text+image-2'); ?>
+<?php get_template_part('template-parts/inner-page/two-col-text+image-2',null,array('class'=>'manifesto--capital')); ?>
 <!-- Number Cards Section -->
 <?php get_template_part('template-parts/capital/number-cards'); ?>
 <!-- Portfolio Section -->

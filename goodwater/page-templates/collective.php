@@ -12,20 +12,13 @@ get_header(); ?>
 <!-- Banner Section -->
 <?php get_template_part('template-parts/inner-page/banner'); ?>
 <!-- Two column Content Section -->
-<?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--capital')); ?>
-<!-- Reach Section -->
-<?php get_template_part('template-parts/capital/reach'); ?>
-
+<?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'collective', 'button_on_left' => true)); ?>
+<!-- How it works Section -->
+<?php get_template_part('template-parts/inner-page/two-col-text+image-2',null,array('class'=>'manifesto--capital collective')); ?>
 <!-- Accordion Section -->
-<?php get_template_part('template-parts/about/accordion'); ?>
-
-<!-- Two column Content Section -->
-<?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--capital')); ?>
-
-<!-- new template, collective case study is going to be an additional 8 hours-->
-
-<!-- Careers Section -->
-<?php get_template_part('template-parts/about/careers'); ?>
+<?php get_template_part('template-parts/inner-page/accordion'); ?>
+<!-- Contact Us Section -->
+<?php get_template_part('template-parts/inner-page/bottom-text'); ?>
 
 
 <?php get_footer(); ?>

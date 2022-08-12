@@ -48,3 +48,23 @@ footer.footer-text {
   }
 }
 
+@media screen and (min-width: 991px) {
+  .medium-up-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .medium-down-hide {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .manifesto.collective {
+    padding-bottom: 0;
+  }
+  .manifesto__thumb {
+    position: absolute !important;
+  }
+}

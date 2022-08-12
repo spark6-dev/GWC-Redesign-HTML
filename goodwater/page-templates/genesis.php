@@ -20,7 +20,7 @@ get_header(); ?>
 <!-- Number Cards Section -->
 <?php get_template_part('template-parts/inner-page/number-cards'); ?>
 <!-- How we work Section -->
-<?php get_template_part('template-parts/inner-page/two-col-text+image-2'); ?>
+<?php get_template_part('template-parts/inner-page/two-col-text+image-2',null,array('class'=>'manifesto--capital')); ?>
 <!-- Genesis Steps Section -->
 <?php get_template_part('template-parts/inner-page/cards'); ?>
 <!-- Genesis Apply Section -->
