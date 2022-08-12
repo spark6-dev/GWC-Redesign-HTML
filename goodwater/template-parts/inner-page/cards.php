@@ -1,8 +1,8 @@
 <div class="gwc approach approach--captal">
-    <?php if( have_rows('investment_slider') ): $count=0; $counter=0;?>
+    <?php if( have_rows('card_slider') ): $count=0; $counter=0;?>
         <div class="approach__wrap">
             <div class="approach__slider"> 
-                <?php while( have_rows('investment_slider') ) : the_row(); $count++; $counter++;
+                <?php while( have_rows('card_slider') ) : the_row(); $count++; $counter++;
                     if($count<10):
                         $count = "0".$count;
                     else:
@@ -25,11 +25,11 @@
                     <div class="approach__slide"> 
                         <div class="approach__tab <?php echo $bg_class;?>"> 
                             <span><?php echo $count;?></span>
-                            <?php if( get_sub_field('investment_slider_heading') ):?>
-                                <h2><?php echo esc_html(get_sub_field('investment_slider_heading'));?></h2>
+                            <?php if( get_sub_field('card_slider_heading') ):?>
+                                <h2><?php echo esc_html(get_sub_field('card_slider_heading'));?></h2>
                             <?php endif;
-                            if( get_sub_field('investment_slider_content') ):?>
-                                <h3><?php echo esc_html(get_sub_field('investment_slider_content'));?></h3>
+                            if( get_sub_field('card_slider_content') ):?>
+                                <h3><?php echo esc_html(get_sub_field('card_slider_content'));?></h3>
                             <?php endif;?>
                         </div>
                     </div>

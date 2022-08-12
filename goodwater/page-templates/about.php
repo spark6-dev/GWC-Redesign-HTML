@@ -16,11 +16,11 @@ get_header(); ?>
 <!-- Animation Section -->
 <?php get_template_part('template-parts/about/animation'); ?>
 <!-- Number Cards Section -->
-<?php get_template_part('template-parts/about/number-cards'); ?>
+<?php get_template_part('template-parts/inner-page/number-cards'); ?>
 <!-- Manifesto Section -->
 <?php get_template_part('template-parts/about/manifesto'); ?>
 <!-- Accordion Section -->
-<?php get_template_part('template-parts/about/accordion'); ?>  
+<?php get_template_part('template-parts/inner-page/accordion'); ?>
 <!-- Careers Section -->
 <?php get_template_part('template-parts/about/careers'); ?>   
    

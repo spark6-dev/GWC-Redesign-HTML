@@ -13,20 +13,19 @@ get_header(); ?>
 <?php get_template_part('template-parts/inner-page/banner'); ?>
 <!-- Two column Content Section -->
 <?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--capital')); ?>
-<!-- Investment Approach Section (add something similar for genesis)-->
-<?php get_template_part('template-parts/capital/investment-approach'); ?>
-
+<!-- Program Overview Section -->
+<?php get_template_part('template-parts/inner-page/two-col-text+image'); ?>
 <!-- Accordion Section -->
-<?php get_template_part('template-parts/about/accordion'); ?>
-
-<!-- Reach Section -->
-<?php get_template_part('template-parts/capital/reach'); ?>
+<?php get_template_part('template-parts/inner-page/accordion'); ?>
 <!-- Number Cards Section -->
-<?php get_template_part('template-parts/capital/number-cards'); ?>
-
-
-<!-- Careers Section -->
-<?php get_template_part('template-parts/about/careers'); ?>
-
+<?php get_template_part('template-parts/inner-page/number-cards'); ?>
+<!-- How we work Section -->
+<?php get_template_part('template-parts/inner-page/two-col-text+image-2'); ?>
+<!-- Genesis Steps Section -->
+<?php get_template_part('template-parts/inner-page/cards'); ?>
+<!-- Genesis Apply Section -->
+<?php get_template_part('template-parts/inner-page/bottom-text'); ?>
+<!-- Footer text -->
+<?php get_template_part('template-parts/genesis/footer-text'); ?>
 
 <?php get_footer(); ?>

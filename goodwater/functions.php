@@ -148,6 +148,8 @@ function goodwater_scripts() {
 	wp_enqueue_style( 'page-ahead-plugin-style', get_template_directory_uri() . '/css/plugin.css', array(), _S_VERSION );
 	// Main Style
 	wp_enqueue_style( 'page-ahead-main-style', get_template_directory_uri() . '/css/main.css', array(), _S_VERSION );
+	// Spacing Style
+    wp_enqueue_style( 'page-ahead-additional-style', get_template_directory_uri() . '/css/additional.css', array(), _S_VERSION );
 	// Main Script
 	wp_enqueue_script( 'page-ahead-main-js', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 	// WP Script

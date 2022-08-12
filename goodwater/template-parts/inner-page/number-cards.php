@@ -12,7 +12,7 @@
                                 <h2><?php echo esc_html(get_sub_field('value'));?></h2>
                             <?php endif;
                             if( get_sub_field('label') ):?>
-                                <h4><?php echo esc_html(get_sub_field('label'));?></h4>
+                                <h4><?php echo get_sub_field('label');?></h4>
                             <?php endif;?>
                         </div>
                     </div>

@@ -14,11 +14,11 @@ get_header(); ?>
 <!-- Two column Content Section -->
 <?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--capital')); ?>
 <!-- Investment Approach Section -->
-<?php get_template_part('template-parts/capital/investment-approach'); ?>
+<?php get_template_part('template-parts/inner-page/two-col-text+image'); ?>
 <!-- Cards Section -->
-<?php get_template_part('template-parts/capital/cards'); ?>
+<?php get_template_part('template-parts/inner-page/cards'); ?>
 <!-- Reach Section -->
-<?php get_template_part('template-parts/capital/reach'); ?>
+<?php get_template_part('template-parts/inner-page/two-col-text+image-2'); ?>
 <!-- Number Cards Section -->
 <?php get_template_part('template-parts/capital/number-cards'); ?>
 <!-- Portfolio Section -->
