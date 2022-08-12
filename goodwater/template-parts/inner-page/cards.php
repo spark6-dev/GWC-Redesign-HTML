@@ -37,12 +37,12 @@
             </div>
             <div class="approach__nav"> 
                 <div class="approach__slider-arrow">
-                    <button class="approach__arrow approach__arrow--prev" role="button" aria-lebel="Previous">
+                    <button class="approach__arrow approach__arrow--prev" role="button" aria-label="Previous">
                         <svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.41142 1.32353L13.2122 7.12435M13.2122 7.12435L7.24474 12.7536M13.2122 7.12435L0.787908 6.94284" stroke="white" stroke-width="1.25"></path>
                         </svg>
                     </button>
-                    <button class="approach__arrow approach__arrow--next" role="button" aria-lebel="Next">
+                    <button class="approach__arrow approach__arrow--next" role="button" aria-label="Next">
                         <svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7.41142 1.32353L13.2122 7.12435M13.2122 7.12435L7.24474 12.7536M13.2122 7.12435L0.787908 6.94284" stroke="white" stroke-width="1.25"></path>
                         </svg>
