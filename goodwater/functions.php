@@ -154,7 +154,9 @@ function goodwater_scripts() {
 	wp_enqueue_script( 'page-ahead-main-js', get_template_directory_uri() . '/js/script.js', array(), _S_VERSION, true );
 	// WP Script
 	wp_enqueue_script( 'page-ahead-wp-script-js', get_template_directory_uri() . '/js/wp-script.js', array(), _S_VERSION, true );
-	wp_localize_script( 'page-ahead-wp-script-js', 'ajax_object',array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+    // Tabbis Script
+    wp_enqueue_script( 'page-ahead-tabbis-js', get_template_directory_uri() . '/js/tabbis.es6.min.js', array(), _S_VERSION, true );
+    wp_localize_script( 'page-ahead-wp-script-js', 'ajax_object',array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
 add_action( 'wp_enqueue_scripts', 'goodwater_scripts' );
 

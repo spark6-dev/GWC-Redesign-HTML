@@ -17,6 +17,8 @@ get_header(); ?>
 <?php get_template_part('template-parts/inner-page/two-col-text+image-2',null,array('class'=>'manifesto--capital collective')); ?>
 <!-- Accordion Section -->
 <?php get_template_part('template-parts/inner-page/accordion'); ?>
+<!-- Pilot program Section -->
+<?php get_template_part('template-parts/collective/pilot-program'); ?>
 <!-- Contact Us Section -->
 <?php get_template_part('template-parts/inner-page/bottom-text'); ?>
 
