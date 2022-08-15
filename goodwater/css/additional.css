@@ -269,3 +269,96 @@ footer.footer-text {
   background-color: #181c4b; }
 .gwc.pilot-program .healthcare__nav .healthcare__arrow.healthcare__arrow--prev:hover svg path {
   stroke: #fff; }
+
+.collective .accordion__wrap .pilot-program_image {
+  padding-top: 1.3125rem;
+}
+.collective .accordion__wrap .pilot-program-slider-controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.9375rem;
+  vertical-align: center;
+}
+
+.collective .accordion__wrap .pilot-program-slider-controls .counter {
+  font-size: 0.875rem;
+  color: #4a5c76;
+  line-height: 1.3125rem;
+  padding-top: 0.6rem;
+}
+
+.collective .accordion__wrap .pilot-program-slider-controls .healthcare__nav {
+  padding-top: 0;
+}
+
+.collective .accordion__wrap .pilot-program_content {
+  padding-top: 1.3rem;
+  color: #4a5c76;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+
+.collective .accordion__wrap .pilot-program_content h3 {
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+  font-weight: 400;
+}
+
+.collective .accordion__wrap .pilot-program_content p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.collective .pilot-program .accordion__wrap .l-accordion.is-open .l-accordion__title {
+  color: #5dbdf0;
+  border-bottom: 0.25rem solid #5dbdf0;
+}
+
+.collective .pilot-program .accordion__wrap .l-accordion__title {
+  color: #8399B9;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 1.1875rem;
+  border-bottom: 0.25rem solid #8399B9;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.collective .pilot-program .accordion__wrap .l-accordion__title:hover {
+  filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+}
+
+.collective .pilot-program .accordion__wrap .l-accordion.is-open .l-accordion__title {
+  color: #5dbdf0;
+  border-bottom-color: #5dbdf0;
+}
+
+
+.collective .pilot-program .accordion__wrap .l-accordion .l-accordion__content {
+  display: none;
+}
+
+.collective .pilot-program .accordion__wrap .l-accordion.is-open .l-accordion__content {
+  display: block;
+}
+
+.collective .pilot-program .l-accordion .l-accordion__title::after {
+  background-image: url(../images/img-accordion-1.svg);
+  width: 1.0625rem;
+  height: 1.0625rem;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: calc(50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.collective .pilot-program .l-accordion.is-open .l-accordion__title::after {
+  transform: translateY(-50%) rotate(180deg);
+  background-image: url(../images/img-accordion-2.svg);
+  color: #5dbdf0;
+}
