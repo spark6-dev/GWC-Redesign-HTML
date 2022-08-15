@@ -27,6 +27,25 @@ footer.footer-text {
   font-family: "Untitled Serif";
   font-style: normal;
 }
+@media screen and (max-width: 990px) {
+  .genesis .gwc.opportunities--about {
+    padding-top: 0.4rem;
+  }
+}
+@media screen and (max-width: 990px) {
+  .opportunities--about h3 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    padding-top: 2.1875rem;
+    padding-bottom: 2.1875rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .collective .gwc.opportunities--about {
+    padding-top: 2rem;
+  }
+}
 
 .consumer__col {
   text-align: center;
@@ -68,3 +87,20 @@ footer.footer-text {
     position: absolute !important;
   }
 }
+
+@media screen and (max-width: 990px) {
+  .collective .gwc.manifesto {
+    padding-top: 2.5625rem;
+  }
+}
+
+.collective .gwc.consumer.pilot-program {
+  padding-top: 2.5625rem;
+}
+
+@media screen and (max-width: 990px) {
+  .genesis .gwc.manifesto {
+    padding-top: 2.5625rem;
+  }
+}
+
