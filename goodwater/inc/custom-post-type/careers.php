@@ -20,7 +20,7 @@ function careers() {
     $args = array(
         'labels'              => $labels,
         'description'         => 'Career',
-        'supports'            => array( 'title' ),
+        'supports'            => array( 'title', 'custom-fields' ),
         'hierarchical'        => false,
         'public'              => false,
         'taxonomies'          => array('career_category'),

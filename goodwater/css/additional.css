@@ -67,6 +67,14 @@ footer.footer-text {
   }
 }
 
+/** bug fix padding between label and content */
+@media screen and (max-width: 990px) {
+  .gwc.reach--capital .reach__wrap .reach__content {
+    padding-top: 1.5rem;
+  }
+}
+
+
 @media screen and (min-width: 991px) {
   .medium-up-hide {
     display: none;
@@ -83,8 +91,8 @@ footer.footer-text {
   .manifesto.collective {
     padding-bottom: 0;
   }
-  .manifesto__thumb {
-    position: absolute !important;
+  .manifesto.collective .manifesto__thumb {
+    height: 0;
   }
 }
 
@@ -127,14 +135,15 @@ footer.footer-text {
     line-height: 3.625rem; } }
 
 .gwc.consumer.pilot-program .consumer__wrap .consumer__col p {
-  font-size: 1.5rem;
-  line-height: 1.95rem;
-  color: #181c4b;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: #4A5C76;
   font-weight: 400;
   font-family: "Untitled Serif"; }
 @media screen and (min-width: 991px) {
   .gwc.consumer.pilot-program .consumer__wrap .consumer__col p {
     font-size: 2rem;
+    color: #181c4b;
     line-height: 2.375rem; } }
 
 .gwc.consumer.pilot-program .consumer__wrap {
@@ -165,7 +174,7 @@ footer.footer-text {
 }
 
 .collective .tab-header > div:hover {
-  filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.75));
 }
 
 .collective .tab-content {
@@ -361,4 +370,9 @@ footer.footer-text {
   transform: translateY(-50%) rotate(180deg);
   background-image: url(../images/img-accordion-2.svg);
   color: #5dbdf0;
+}
+
+/** bug fix for squashed circles in accordion **/
+.gwc.accordion .l-accordion .l-accordion__title h3 {
+  max-width: calc(100% - 4.125rem);
 }

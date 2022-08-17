@@ -10,7 +10,7 @@
         <div class="manifesto__wrap">
             <div class="manifesto__content"> 
                 <?php if( get_field('tcti2-heading') ):?>
-                    <h3><?php echo esc_html(get_field('tcti2-heading'));?></h3>
+                    <h3><?php echo get_field('tcti2-heading');?></h3>
                 <?php endif;
                 if( get_field('tcti2-content') ):
                     echo apply_filters('the_content',get_field('tcti2-content'));

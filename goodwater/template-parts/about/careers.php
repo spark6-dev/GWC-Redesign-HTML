@@ -41,10 +41,12 @@
                                     <?php endforeach;
                                 endif;?>
                                 <div class="panel__head">
-                                    <h3><?php echo esc_html(get_the_title());?></h3>
-                                    <a class="l-btn l-btn--dark" href="https://jobs.lever.co/goodwatercap" title="panel">Apply
+                                    <h3><?php echo esc_html(get_the_title());?></h3><?php $link = get_field('apply_link', get_the_ID());
+                                    if($link):?>
+                                        <a class="l-btn l-btn--dark" href="<?php echo $link['url'];?>" title="<?php echo $link['title'];?>" target="<?php echo $link['target'];?>"><?php echo $link['title'];?>
                                         <i><svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.21047 1.17139H9.41407M9.41407 1.17139L9.17486 9.3715M9.41407 1.17139L0.500392 9.82837" stroke="white" stroke-width="1.25"></path></svg></i>
-                                    </a>
+                                        </a>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>

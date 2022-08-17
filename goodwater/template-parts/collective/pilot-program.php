@@ -6,7 +6,7 @@
         <div class="consumer__wrap">
             <div class="consumer__col">
                 <?php if( get_field('pilot-heading') ):?>
-                    <h3><?php echo esc_html(get_field('pilot-heading'));?></h3>
+                    <h3><?php echo get_field('pilot-heading');?></h3>
                 <?php endif; ?>
             </div>
             <div class="consumer__col">
