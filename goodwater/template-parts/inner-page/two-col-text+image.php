@@ -15,6 +15,9 @@
             <?php if( get_field('tcti-image') ):?>
                 <div class="reach__thumb"><?php echo get_image(array('url'=>get_field('tcti-image'))); ?></div>
             <?php endif;?>
+            <?php if( get_field('tcti-image-mobile') ):?>
+                <div class="reach__thumb_mobile"><?php echo get_image(array('url'=>get_field('tcti-image-mobile'))); ?></div>
+            <?php endif;?>
         </div>
     </div>
 </div>
