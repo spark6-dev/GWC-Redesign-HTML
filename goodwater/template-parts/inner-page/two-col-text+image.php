@@ -4,6 +4,9 @@
             <span class="l-caption"><?php echo esc_html(get_field('tcti-label'));?></span>
         <?php endif;?>
         <div class="reach__wrap">
+            <?php if( get_field('tcti-heading') ):?>
+                <h3 class="hide"><?php echo esc_html(get_field('tcti-heading'));?></h3>
+            <?php endif; ?>
             <div class="reach__content"> 
                 <?php if( get_field('tcti-heading') ):?>
                     <h3><?php echo esc_html(get_field('tcti-heading'));?></h3>

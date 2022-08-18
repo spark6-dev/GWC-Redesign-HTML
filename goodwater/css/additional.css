@@ -377,7 +377,7 @@ footer.footer-text {
   max-width: calc(100% - 4.125rem);
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 575px) {
   .genesis .gwc.manifesto--capital .manifesto__wrap {
     display: flex;
     flex-direction: column-reverse;
@@ -409,11 +409,49 @@ footer.footer-text {
     display: block;
   }
 }
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 575px) {
   .genesis .gwc.reach--capital .reach__wrap {
     display: flex;
     flex-direction: column-reverse;
     margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 575px) {
+  .genesis .gwc.reach--capital .reach__wrap {
+    flex-wrap: wrap;
+  }
+  .genesis .gwc.reach--capital .reach__content h3 {
+    display: none;
+  }
+  .genesis .gwc.reach--capital .reach__wrap > h3 {
+    padding: 2.3125rem 1.5rem 2.25rem 0;
+    color: #181c4b;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-family: "Untitled Serif";
+    display: block;
+  }
+  .genesis .gwc.reach--capital .reach__wrap {
+    display: flex;
+  }
+  .genesis .gwc.reach--capital .reach__wrap .reach__content {
+    display: flex;
+    width: 45%;
+    flex: 0 0 45%;
+    margin-top: 0;
+    margin-bottom: 2.25rem;
+    padding: 0 2.5rem 0 0;
+  }
+  .genesis .gwc.reach--capital .reach__wrap .reach__thumb_mobile {
+    margin-bottom: 1.75rem;
+    width: 55%;
+    flex: 0 0 55%;
+  }
+  .genesis .gwc.reach--capital .reach__wrap .reach__thumb_mobile img {
+    float: right;
+    margin-right: 0;
   }
 }
 
@@ -452,4 +490,125 @@ footer.footer-text {
   .impact__cards .gwc.card h3 {
     margin-bottom: 1.25rem;
   }
+}
+
+.medium-show {
+  display: none;
+}
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .medium-show {
+    display: inherit;
+  }
+  .medium-hide {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto {
+    padding: 3.9375rem 0;
+    position: relative; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap {
+    display: flex;
+    margin: 0 -1.125rem;
+  } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap > h3 {
+    padding: 2.3125rem  2.5rem 2.25rem 1.25rem;
+    color: #181c4b;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-family: "Untitled Serif";
+    display: block;
+  }
+}
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap .manifesto__content {
+    width: 50%;
+    flex: 0 0 50%;
+    margin-bottom: 0;
+    padding: 0 2.5rem 0 1.25rem; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap .manifesto__content h3 {
+    font-size: 2rem;
+    line-height: 2.375rem;
+    margin-bottom: 2.1875rem; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap .manifesto__content p {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    margin-bottom: 2.1875rem; }
+  .gwc.manifesto .manifesto__wrap .manifesto__content p:last-child {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap .manifesto__thumb {
+    padding: 0 1.125rem 0 1.125rem;
+    padding-right: 0;
+    width: 50%;
+    position: relative;
+    right: 0rem; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap .manifesto__thumb img {
+    float: right; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap .manifesto__thumb img.desktop {
+    display: block; } }
+
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__wrap .manifesto__thumb img.mobile {
+    display: none; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto .manifesto__bottom h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.625rem;
+    margin-bottom: 5.875rem;
+    max-width: 57.5rem; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto--capital .manifesto__wrap .manifesto__content {
+    width: 45%;
+    flex: 0 0 45%;
+    margin-top: 0;
+    margin-bottom: 2.25rem; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto--capital .manifesto__wrap .manifesto__content h3 {
+    font-size: 3rem;
+    line-height: 3.625rem;
+    font-weight: 700;
+    margin-bottom: 1.875rem; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto--capital .manifesto__wrap .manifesto__content p {
+    margin-bottom: 0; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .gwc.manifesto--capital .manifesto__wrap .manifesto__thumb {
+    margin-bottom: 1.75rem;
+    width: 55%;
+    flex: 0 0 55%; } }
+
+@media screen and (max-width: 990px) and (min-width: 576px) {
+  .manifesto__wrap {
+    flex-wrap: wrap;
+
+  }
+}
+
+.hide {
+  display: none;
 }
