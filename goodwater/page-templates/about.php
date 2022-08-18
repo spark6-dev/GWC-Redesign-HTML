@@ -12,7 +12,7 @@ get_header(); ?>
 <!-- Banner Section -->
 <?php get_template_part('template-parts/inner-page/banner',null,array('class'=>'banner--about')); ?>
 <!-- Two column Content Section -->
-<?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--about')); ?>
+<?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--about is--mobile')); ?>
 <!-- Animation Section -->
 <?php get_template_part('template-parts/about/animation'); ?>
 <!-- Number Cards Section -->

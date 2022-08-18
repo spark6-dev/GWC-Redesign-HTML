@@ -3143,8 +3143,22 @@ em {
                 filter: blur(60px);
                 top: 50%;
                 transform: translateY(-50%);
-                width: 57.625rem;
-                height: 25.625rem; } }
+                border-radius: 50%; } }
+          .gwc.goal .goal__wrapper .goal__container .goal__slide[data-slide="2"] .goal__subslide .goal__ellipse.first::after {
+            width: 57.625rem;
+            height: 25.625rem;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%; }
+          .gwc.goal .goal__wrapper .goal__container .goal__slide[data-slide="2"] .goal__subslide .goal__ellipse.second::after {
+            width: 39.625rem;
+            height: 15.375rem;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%; }
+          .gwc.goal .goal__wrapper .goal__container .goal__slide[data-slide="2"] .goal__subslide .goal__ellipse.third::after {
+            width: 60.875rem;
+            height: 25.625rem;
+            transform: translateY(-50%) translateX(-50%);
+            left: 50%; }
           .gwc.goal .goal__wrapper .goal__container .goal__slide[data-slide="2"] .goal__subslide .goal__ellipse p {
             font-weight: 400;
             font-family: "Untitled Serif";
@@ -3688,51 +3702,68 @@ p {
       padding: 0 0rem 0rem 1.125rem; } }
   .gwc.grid .grid__boxes {
     margin-top: 2.5rem; }
-    @media screen and (min-width: 1199px) {
+    @media screen and (min-width: 768px) {
       .gwc.grid .grid__boxes {
         margin-top: 0;
         display: flex;
-        justify-content: center; } }
-  @media screen and (min-width: 1199px) and (min-width: 991px) {
-    .gwc.grid .grid__boxes {
-      margin: 0 -0.84375rem; } }
-    @media screen and (min-width: 1199px) {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -0.625rem; } }
+    @media screen and (min-width: 991px) {
+      .gwc.grid .grid__boxes {
+        margin: 0 -0.84375rem; } }
+    @media screen and (min-width: 768px) {
       .gwc.grid .grid__boxes .grid__col {
         width: 33.33%;
         flex: 0 0 33.33%; } }
     .gwc.grid .grid__boxes .grid__col:last-child .gwc.card {
       margin-bottom: 0; }
-      @media screen and (min-width: 1199px) {
+      @media screen and (min-width: 768px) {
         .gwc.grid .grid__boxes .grid__col:last-child .gwc.card {
           margin-bottom: 1.9375rem; } }
+    @media screen and (min-width: 768px) {
+      .gwc.grid .grid__boxes .grid__card {
+        margin: 0 0.625rem; } }
+    @media screen and (min-width: 991px) {
+      .gwc.grid .grid__boxes .grid__card {
+        margin: 0 0.84375rem; } }
     .gwc.grid .grid__boxes .grid__card .gwc.card {
       background-color: #fff;
       padding: 1.4375rem 1.5625rem 2.0625rem;
       margin-bottom: 1.375rem; }
       @media screen and (min-width: 991px) {
         .gwc.grid .grid__boxes .grid__card .gwc.card {
+          margin: 0;
           padding: 2.5rem 3.125rem;
-          margin: 0 0.84375rem 1.9375rem;
           margin-bottom: 1.875rem; } }
       .gwc.grid .grid__boxes .grid__card .gwc.card h2 {
         font-weight: 700;
         font-size: 5rem;
         line-height: 4.25rem;
         border-bottom: 4px solid #181c4b;
-        white-space: nowrap;
         padding-bottom: 1.625rem;
-        text-align: left; }
-        @media screen and (min-width: 991px) {
+        text-align: left;
+        white-space: normal;
+        word-break: break-word; }
+        @media screen and (min-width: 768px) {
+          .gwc.grid .grid__boxes .grid__card .gwc.card h2 {
+            font-size: 3.5625rem;
+            line-height: 3.875rem; } }
+        @media screen and (min-width: 1199px) {
           .gwc.grid .grid__boxes .grid__card .gwc.card h2 {
             font-size: 6rem;
             line-height: 5.125rem;
             margin-bottom: 2.5rem;
-            padding-bottom: 2.5rem; } }
+            padding-bottom: 2.5rem;
+            white-space: nowrap; } }
       .gwc.grid .grid__boxes .grid__card .gwc.card h4 {
         text-align: left; }
     @media screen and (min-width: 991px) {
       .gwc.grid .grid__boxes .grid__card.small {
         max-width: 21.1875rem; } }
+    @media screen and (min-width: 768px) {
+      .gwc.grid .grid__boxes .mt-100 {
+        margin-top: 6.25rem; } }
   .gwc.grid--about {
     padding: 1.6875rem 0 1.625rem; }
     @media screen and (min-width: 991px) {
@@ -3744,20 +3775,26 @@ p {
         .gwc.grid--about .grid__boxes {
           margin-left: -0.9375rem;
           margin-right: -0.9375rem; } }
-      @media screen and (min-width: 1199px) {
+      @media screen and (min-width: 768px) {
         .gwc.grid--about .grid__boxes {
           flex-wrap: wrap; } }
-      @media screen and (min-width: 1199px) {
+      @media screen and (min-width: 768px) {
         .gwc.grid--about .grid__boxes .grid__card {
-          width: 33.33%;
-          flex: 0 0 33.33%;
-          height: 100%; } }
+          width: calc(50% - 20px);
+          flex: 0 0 calc(50% - 20px); } }
+      @media screen and (min-width: 991px) {
+        .gwc.grid--about .grid__boxes .grid__card {
+          width: calc(33.33% - 30px);
+          flex: 0 0 calc(33.33% - 30px);
+          margin: 0 0.9375rem; } }
       .gwc.grid--about .grid__boxes .grid__card .gwc.card {
         margin-bottom: 1.375rem; }
+        @media screen and (min-width: 768px) {
+          .gwc.grid--about .grid__boxes .grid__card .gwc.card {
+            height: calc(100% - 22px); } }
         @media screen and (min-width: 991px) {
           .gwc.grid--about .grid__boxes .grid__card .gwc.card {
-            margin-left: 0.9375rem;
-            margin-right: 0.9375rem;
+            margin: 0;
             height: calc(100% - 30px);
             margin-bottom: 1.875rem; } }
         .gwc.grid--about .grid__boxes .grid__card .gwc.card h4 {
@@ -5570,21 +5607,42 @@ p {
     .gwc.reach--about .reach__wrap {
       justify-content: space-between;
       margin-bottom: 0; }
+      @media screen and (min-width: 768px) {
+        .gwc.reach--about .reach__wrap {
+          display: flex; } }
       .gwc.reach--about .reach__wrap .reach__content {
         margin-top: 2.1875rem;
         max-width: 29rem; }
         .gwc.reach--about .reach__wrap .reach__content h3 {
           margin-bottom: 0; }
+        @media screen and (min-width: 768px) {
+          .gwc.reach--about .reach__wrap .reach__content {
+            margin-top: 3.3125rem;
+            padding-right: 0.625rem; } }
         @media screen and (min-width: 991px) {
           .gwc.reach--about .reach__wrap .reach__content {
-            margin-top: 7.0625rem; } }
+            margin-top: 7.0625rem;
+            padding-right: 0; } }
     .gwc.reach--about .reach__thumb {
       margin-top: 3.125rem;
-      max-width: 37.6875rem; }
-      @media screen and (min-width: 991px) {
+      max-width: 24.375rem; }
+      @media screen and (min-width: 768px) {
         .gwc.reach--about .reach__thumb {
           margin: -2.375rem 0 0 !important;
           padding: 0 !important; } }
+  @media screen and (min-width: 768px) and (min-width: 991px) {
+    .gwc.reach--about .reach__thumb {
+      max-width: 37.6875rem; } }
+      .gwc.reach--about .reach__thumb.is--mobile {
+        display: block !important; }
+        @media screen and (min-width: 768px) {
+          .gwc.reach--about .reach__thumb.is--mobile {
+            display: none !important; } }
+      .gwc.reach--about .reach__thumb.is--desktop {
+        display: none !important; }
+        @media screen and (min-width: 768px) {
+          .gwc.reach--about .reach__thumb.is--desktop {
+            display: block !important; } }
 
 @media screen and (min-width: 991px) {
   .gwc.slider-capital {

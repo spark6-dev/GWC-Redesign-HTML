@@ -1,18 +1,90 @@
 <div class="gwc goal">
-    <div class="container"> 
-        <div class="goal__wrapper is--desktop"> 
+    <div class="container">
+        <div class="goal__wrapper is--desktop">
             <div class="goal__title">Animation trigger</div>
         	<div class="goal__container">
-        		<?php $animation_title = get_field('animation_title');
-				if( $animation_title ): ?>
-	              	<div class="goal__slide" data-slide="1">
-	                	<div class="goal__head"> 
-	                  		<h3> <span class="goal__subhead"><?php echo esc_html($animation_title['title_left_text']);?></span><span><?php echo get_image(array('imgid'=> 647)); ?></span><span class="goal__subhead"><?php echo esc_html($animation_title['title_right_text']);?></span></h3>
+				<div class="goal__slide" data-slide="1">
+	                	<div class="goal__head">
+                            <div class="gwc consumer consumer--about goal__consumer">
+                                <div class="consumer__wrap">
+                                    <div class="consumer__col">
+                                        <h3>From day one, we’ve believed in the power of consumer technology to measurably improve billions of lives across the globe.</h3>
+                                    </div>
+                                    <div class="consumer__col">
+                                        <p>From housing to healthcare, food delivery to finances, education to entertainment and transportation, we&#8217;re investing in the world’s most promising entrepreneurs to solve the world’s most pressing problems.</p>
+                                    </div>
+                                </div>
+                            </div>
+	                  		<h3 class="goal__wearegoodwater"> <span class="goal__subhead">We are G</span><span><img src="https://goodwatercadev.wpengine.com/wp-content/uploads/2022/07/img-infinity.svg" alt="img-infinity" id="" class="" srcset="" ></span><span class="goal__subhead">dwater.</span></h3>
 	                	</div>
 	              	</div>
-	            <?php endif; ?>
-              	<div class="goal__slide" data-slide="2">
-                	<div class="goal__thumb"> <?php echo get_image(array('imgid'=> 648, 'class'=>'goal__thumb__img')); ?>
+                    <div class="goal__slide" data-slide="2">
+                    <div class="goal__subslide_wrapper">
+                        <div class="goal__subslide goal__explain" data-sub-slide="1">
+                            <div class="goal__ellipse">
+                                <p>The world’s first <em>regenerative investment platform.</em></p>
+                            </div>
+                        </div>
+                        <div class="goal__subslide goal__explain" data-sub-slide="2">
+                            <div class="goal__ellipse">
+                                <p>But what does that even mean? <em>Let us explain.</em></p>
+                            </div>
+                        </div>
+                        <div class="goal__subslide goal__explain" data-sub-slide="3">
+                            <div class="goal__ellipse">
+                                <p>We believe that for venture to succeed these days, betting big on excellent entrepreneurs isn’t enough. So we’re building a totally new system of entrepreneurship—one where realizing returns is no longer the final step in the process. Instead, our model starts earlier and extends further than any other firm you’ll find.</p>
+                                <div class="goal__arrow"><img src="https://goodwatercadev.wpengine.com/wp-content/uploads/2022/07/arrow-down.svg" alt="arrow-down" id="" class="" srcset="" ></div>
+                            </div>
+                        </div>
+                        <div class="goal__subslide goal__step_bg" data-sub-slide="4">
+                            <div class="goal__points" id="goal__points__genesis">
+                                <div class="goal__points__wrapper">
+                                    <div><span class="goal__point">01</span></div>
+                                    <div class="goal__point_title">
+                                        <div class="goal__point_title__point">01</div>
+                                        <h5 class="goal__point_title__text">Genesis</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goal__points" id="goal__points__capital">
+                                <div class="goal__points__wrapper">
+                                    <div><span class="goal__point">02</span></div>
+                                    <div class="goal__point_title">
+                                        <div class="goal__point_title__point">02</div>
+                                        <h5 class="goal__point_title__text">Capital</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goal__points" id="goal__points__collective">
+                                <div class="goal__points__wrapper">
+                                    <div><span class="goal__point">03</span></div>
+                                    <div class="goal__point_title">
+                                        <div class="goal__point_title__point">03</div>
+                                        <h5 class="goal__point_title__text">Collective</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goal__subslide goal__step" id="goal__step__genesis" data-sub-slide="5">
+                            <h4 class="goal__step__header"><em>Genesis </em>is the initial step in our closed-loop process.</h4>
+                            <p class="goal__step__description">We democratize software, systems, and wisdom for entrepreneurs everywhere. By lowering the bar of entry, we allow more promising business ideas—from more places around the world—to explore the field, learn best practices, and find their initial footing.</p>
+                        </div>
+                        <div class="goal__subslide goal__step" id="goal__step__capital" data-sub-slide="6">
+                            <h4 class="goal__step__header">The next step is <em>Capital, </em>where we invest in the very best world-changing companies and entrepreneurs.</h4>
+                            <p class="goal__step__description">We accelerate teams that are ready to scale, and help them move from successful startups to market leaders.</p>
+                        </div>
+                        <div class="goal__subslide goal__step" id="goal__step__collective" data-sub-slide="7">
+                            <h4 class="goal__step__header">Then there’s <em>Collective,</em> the final step in our model.</h4>
+                            <p class="goal__step__description">This is where we close the loop, funneling Goodwater’s profits back into our Portfolio Companies, increasing the accessibility and affordability of their products for people in need. It’s how we ensure that our profits and companies improve the lives of communities around the world.</p>
+                        </div>
+                    </div>
+					<div class="goal__thumb">
+						<div class="goal__backgrounds">
+                            <div class="goal__background" id="goal__background__genesis"></div>
+                            <div class="goal__background" id="goal__background__capital"></div>
+                            <div class="goal__background" id="goal__background__collective"></div>
+                        </div>
+						<?php echo get_image(array('imgid'=> 648, 'class'=>'goal__thumb__img')); ?>
                 		<svg class="goal__thumb__svg" width="1244" viewBox="0 0 1244 626" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<g id="infy-initial">
 							<g id="Group">
@@ -546,103 +618,14 @@
 							</defs>
 						</svg>
 					</div>
-                	<div class="goal__subslide" data-sub-slide="1">
-                  		<div class="goal__ellipse"> 
-                    		<?php $scroll_texts = get_field('scroll_texts');
-                    		if($scroll_texts['scroll_text_1']):
-                    			echo apply_filters('the_content',$scroll_texts['scroll_text_1']);
-                    		endif;?>
-                  		</div>
-                	</div>
-                	<div class="goal__subslide" data-sub-slide="2">
-                  		<div class="goal__ellipse">
-                    		<?php if($scroll_texts['scroll_text_2']):
-                    			echo apply_filters('the_content',$scroll_texts['scroll_text_2']);
-                    		endif;?>
-                  		</div>
-                	</div>
-	                <div class="goal__subslide" data-sub-slide="3">
-	                  	<div class="goal__ellipse"> 
-	                    	<?php if($scroll_texts['scroll_text_3']):
-                    			echo apply_filters('the_content',$scroll_texts['scroll_text_3']);
-                    		endif;?>
-	                    	<div class="goal__arrow"><?php echo get_image(array('imgid'=> 649)); ?></div>
-	                  	</div>
-	                </div>
-	                <div class="goal__points">
-	                	<?php $first_block = get_field('first_block');
-	                	if($first_block):?>
-		                  	<div class="goal__pwrap goal__pwrap--gen" data-type="genesis">
-		                    	<div class="goal__point"><span>01</span><span class="goal__bg">white bg</span></div>
-		                    	<div class="goal__card">
-		                      		<?php if($first_block['hover_text']):
-		                    			echo apply_filters('the_content',$first_block['hover_text']);
-		                    		endif;
-		                    		if($first_block['hover_content']):
-		                    			echo apply_filters('the_content',$first_block['hover_content']);
-		                    		endif;?>
-		                    	</div>
-		                  	</div>
-		                <?php endif;
-		                $second_block = get_field('second_block');
-	                	if($second_block):?>
-		                  	<div class="goal__pwrap goal__pwrap--cap" data-type="capital">
-		                    	<div class="goal__point"> <span>02</span><span class="goal__bg">white bg</span></div>
-		                    	<div class="goal__card">
-		                      		<?php if($second_block['hover_text']):
-		                    			echo apply_filters('the_content',$second_block['hover_text']);
-		                    		endif;
-		                    		if($second_block['hover_content']):
-		                    			echo apply_filters('the_content',$second_block['hover_content']);
-		                    		endif;?>
-		                    	</div>
-		                  	</div>
-		                <?php endif;
-		                $third_block = get_field('third_block');
-	                	if($third_block):?>
-		                  	<div class="goal__pwrap goal__pwrap--col" data-type="collective">
-		                    	<div class="goal__point"><span>03</span><span class="goal__bg">white bg</span></div>
-		                    	<div class="goal__card">
-		                      		<?php if($third_block['hover_text']):
-		                    			echo apply_filters('the_content',$third_block['hover_text']);
-		                    		endif;
-		                    		if($third_block['hover_content']):
-		                    			echo apply_filters('the_content',$third_block['hover_content']);
-		                    		endif;?>
-		                    	</div>
-		                  	</div>
-		                <?php endif;?>
-	                </div>
-              	</div>
-              	<div class="goal__nav"> 
-              		<?php if($first_block['link']):?>
-	                	<div class="goal__link goal__link--gen" data-type="genesis"><span>01</span>
-	                  		<div class="goal__type">
-	                    		<h5><?php echo esc_html( $first_block['link']['title'] ); ?></h5><a class="goal__arrow" href="<?php echo esc_url( $first_block['link']['url'] ); ?>"><svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 15.0004C0 7.08696 6.54343 0.671875 14.4568 0.671875C22.3702 0.671875 28.9137 7.08696 28.9137 15.0004C28.9137 22.9138 22.3702 29.3289 14.4568 29.3289C6.54343 29.3289 0 22.9138 0 15.0004Z" fill="#4A5C76"/><path d="M10.7105 10.6719H18.9141M18.9141 10.6719L18.6749 18.872M18.9141 10.6719L10.0004 19.3289" stroke="white" stroke-width="1.25"/></svg></a>
-	                  		</div>
-	                	</div>
-	                <?php endif;
-	                if($second_block['link']):?>
-	                	<div class="goal__link goal__link--cap" data-type="capital"><span>02</span>
-	                  		<div class="goal__type">
-	                    		<h5><?php echo esc_html( $second_block['link']['title'] ); ?></h5><a class="goal__arrow" href="<?php echo esc_url( $second_block['link']['url'] ); ?>"><svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 15.0004C0 7.08696 6.54343 0.671875 14.4568 0.671875C22.3702 0.671875 28.9137 7.08696 28.9137 15.0004C28.9137 22.9138 22.3702 29.3289 14.4568 29.3289C6.54343 29.3289 0 22.9138 0 15.0004Z" fill="#4A5C76"/><path d="M10.7105 10.6719H18.9141M18.9141 10.6719L18.6749 18.872M18.9141 10.6719L10.0004 19.3289" stroke="white" stroke-width="1.25"/></svg></a>
-	                  		</div>
-	                	</div>
-	                <?php endif;
-	                if($third_block['link']):?>
-	                	<div class="goal__link goal__link--col" data-type="collective"><span>03</span>
-	                  		<div class="goal__type">
-	                    		<h5><?php echo esc_html( $third_block['link']['title'] ); ?></h5><a class="goal__arrow" href="<?php echo esc_url( $third_block['link']['url'] ); ?>"><svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 15.0004C0 7.08696 6.54343 0.671875 14.4568 0.671875C22.3702 0.671875 28.9137 7.08696 28.9137 15.0004C28.9137 22.9138 22.3702 29.3289 14.4568 29.3289C6.54343 29.3289 0 22.9138 0 15.0004Z" fill="#4A5C76"/><path d="M10.7105 10.6719H18.9141M18.9141 10.6719L18.6749 18.872M18.9141 10.6719L10.0004 19.3289" stroke="white" stroke-width="1.25"/></svg></a>
-	                  		</div>
-	                	</div>
-	                <?php endif;?>
-              	</div>
+				</div>
             </div>
         </div>
+
         <div class="goal__wrapper is--mobile">
         	<?php $animation_title = get_field('animation_title');
 			if( $animation_title ): ?>
-	            <div class="goal__head"> 
+	            <div class="goal__head">
 	              	<h2><span class="goal__subhead"><?php echo esc_html($animation_title['title_left_text']);?></span><span><?php echo get_image(array('imgid'=> 647)); ?></span><span class="goal__subhead"><?php echo esc_html($animation_title['title_right_text']);?> </span></h2>
 	            </div>
 	        <?php endif; ?>
@@ -656,19 +639,19 @@
         		endif;?>
             </div>
             <div class="goal__arrow"><?php echo get_image(array('imgid'=> 649)); ?></div>
-            <div class="goal__slider"> 
-              	<div class="goal__slide"> 
+            <div class="goal__slider">
+              	<div class="goal__slide">
                 	<div class="goal__slide-wrap"><?php echo get_image(array('imgid'=> 652)); ?><span class="goal__count">01</span></div>
               	</div>
-              	<div class="goal__slide"> 
+              	<div class="goal__slide">
                 	<div class="goal__slide-wrap"><?php echo get_image(array('imgid'=> 653)); ?><span class="goal__count">02</span></div>
               	</div>
-              	<div class="goal__slide"> 
+              	<div class="goal__slide">
                 	<div class="goal__slide-wrap"><?php echo get_image(array('imgid'=> 654)); ?><span class="goal__count">03</span></div>
               	</div>
             </div>
-            <div class="goal__slider-values"> 
-              	<div class="goal__slide-value"> 
+            <div class="goal__slider-values">
+              	<div class="goal__slide-value">
               		<?php if($first_block['link']):?>
 	                	<div class="goal__slide-head"> <span>01</span>
 	                  		<h3><?php echo esc_html( $first_block['link']['title'] ); ?></h3><a class="goal__arrow" href="<?php echo esc_url( $first_block['link']['url'] ); ?>">
@@ -680,7 +663,7 @@
 	                <?php endif;?>
 	                <?php $first_block = get_field('first_block');
                 	if($first_block):?>
-	                	<div class="goal__slide-content"> 
+	                	<div class="goal__slide-content">
 	                  		<?php if($first_block['hover_text']):
                     			echo apply_filters('the_content',$first_block['hover_text']);
                     		endif;
@@ -689,7 +672,7 @@
                     		endif;?>
 	                	</div>
 	                <?php endif;?>
-                	<div class="goal__nav"> 
+                	<div class="goal__nav">
                   		<div class="goal__slider-arrow">
                     		<button class="goal__arrow goal__arrow--prev" role="button" aria-lebel="Previous">
                       			<svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -704,7 +687,7 @@
                   		</div>
                 	</div>
               	</div>
-              	<div class="goal__slide-value"> 
+              	<div class="goal__slide-value">
               		<?php if($second_block['link']):?>
 	                	<div class="goal__slide-head"> <span>02</span>
 	                  		<h3><?php echo esc_html( $second_block['link']['title'] ); ?></h3><a class="goal__arrow" href="<?php echo esc_html( $second_block['link']['url'] ); ?>">
@@ -716,7 +699,7 @@
 	                <?php endif;
 	                $second_block = get_field('second_block');
 	                if($second_block):?>
-	                	<div class="goal__slide-content"> 
+	                	<div class="goal__slide-content">
 	                  		<?php if($second_block['hover_text']):
                     			echo apply_filters('the_content',$second_block['hover_text']);
                     		endif;
@@ -725,7 +708,7 @@
                     		endif;?>
 	                	</div>
 	                <?php endif;?>
-                	<div class="goal__nav"> 
+                	<div class="goal__nav">
                   		<div class="goal__slider-arrow">
                     		<button class="goal__arrow goal__arrow--prev" role="button" aria-lebel="Previous">
 	                      		<svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -740,7 +723,7 @@
                   		</div>
                 	</div>
               	</div>
-              	<div class="goal__slide-value"> 
+              	<div class="goal__slide-value">
               		<?php if($third_block['link']):?>
 	                	<div class="goal__slide-head"> <span>03</span>
 	                 	 	<h3><?php echo esc_html( $third_block['link']['title'] ); ?></h3><a class="goal__arrow" href="<?php echo esc_html( $third_block['link']['url'] ); ?>">
@@ -752,7 +735,7 @@
 	               	<?php endif;
 	               	$third_block = get_field('third_block');
 	                if($third_block):?>
-	                	<div class="goal__slide-content"> 
+	                	<div class="goal__slide-content">
 	                  		<?php if($third_block['hover_text']):
                     			echo apply_filters('the_content',$third_block['hover_text']);
                     		endif;
@@ -761,7 +744,7 @@
                     		endif;?>
 	                	</div>
 	                <?php endif;?>
-	                <div class="goal__nav"> 
+	                <div class="goal__nav">
 	                  	<div class="goal__slider-arrow">
 	                    	<button class="goal__arrow goal__arrow--prev" role="button" aria-lebel="Previous">
 	                      		<svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
