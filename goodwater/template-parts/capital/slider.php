@@ -21,8 +21,13 @@
                         <div class="toggle__pane"> 
                             <div class="toggle__wrap <?php echo esc_attr($bg_color); ?>"> 
                                 <?php if( get_sub_field('portfolio_slider_image') ):?>
-                                    <div class="toggle__thumb">
+                                    <div class="toggle__thumb is--desktop">
                                         <?php echo get_image(array('url'=>get_sub_field('portfolio_slider_image')));?>
+                                    </div>
+                                <?php endif;?>
+                                <?php if( get_sub_field('portfolio_slider_image-mobile') ):?>
+                                    <div class="toggle__thumb is--mobile">
+                                        <?php echo get_image(array('url'=>get_sub_field('portfolio_slider_image-mobile')));?>
                                     </div>
                                 <?php endif;?>
                                 <div class="toggle__content"> 
