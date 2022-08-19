@@ -379,9 +379,10 @@ footer.footer-text {
 }
 
 @media screen and (max-width: 575px) {
-  .genesis .gwc.manifesto--capital .manifesto__wrap {
+  .gwc.manifesto .manifesto__wrap {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 1.5rem;
   }
 }
 @media screen and (max-width: 990px) {
@@ -658,4 +659,38 @@ footer.footer-text {
 .collective .gwc.accordion .l-accordion .l-accordion__title h3 {
   font-size: 2rem;
   line-height: 1.8rem;
+}
+
+.gwc.manifesto--about .manifesto__wrap .manifesto__content {
+  margin: 0 0;
+}
+
+@media screen and (max-width: 990px) {
+  .gwc.invest--about .invest__wrap figure {
+    display: flex;
+    justify-content: center;
+  }
+  .gwc.invest--about .invest__wrap img {
+    max-width: 576px;
+  }
+}
+
+.gwc.manifesto--about .manifesto__wrap .manifesto__content h3 {
+  margin-top: unset;
+}
+
+@media screen and (min-width: 991px) {
+  .gwc.manifesto--about .container--full {
+    padding: 0 0 0 1.5rem;
+  }
+}
+
+.gwc.manifesto--about .manifesto__wrap .manifesto__content h3 {
+  margin-top: unset;
+}
+
+@media screen and (min-width: 991px) {
+  .gwc.manifesto--about .manifesto__wrap .manifesto__content h3 {
+    margin-top: 1.5rem;
+  }
 }
