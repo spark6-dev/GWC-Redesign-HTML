@@ -173,10 +173,6 @@ footer.footer-text {
   line-height: 1.5rem;
 }
 
-.collective .tab-header > div:hover {
-  filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
-}
-
 .collective .tab-content {
   padding: 2rem 6.875rem 1.5rem;
 }
@@ -334,11 +330,6 @@ footer.footer-text {
   position: relative;
 }
 
-
-.collective .pilot-program .accordion__wrap .l-accordion__title:hover {
-  filter: drop-shadow(0 0.25rem 0.25rem rgba(0, 0, 0, 0.25));
-}
-
 .collective .pilot-program .accordion__wrap .l-accordion.is-open .l-accordion__title {
   color: #5dbdf0;
   border-bottom-color: #5dbdf0;
@@ -370,6 +361,16 @@ footer.footer-text {
   transform: rotate(180deg);
   background-image: url(../images/img-accordion-2.svg);
   color: #5dbdf0;
+}
+
+.collective .l-accordion .pilot-program_image {
+  display: flex;
+  justify-content: center;
+}
+
+.collective .l-accordion .pilot-program_image > img {
+  max-width: 500px;
+  border-radius: 25px;
 }
 
 /** bug fix for squashed circles in accordion **/
@@ -611,4 +612,50 @@ footer.footer-text {
 
 .hide {
   display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .gwc .container--full {
+    padding: 0 6.5rem;
+  }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+  .container--full {
+    padding: 0 0 0 1.5rem;
+  }
+}
+
+
+@media screen and (min-width: 1400px) {
+  .gwc .container--full {
+    padding: 0 6.5rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .genesis .gwc.accordion .l-accordion .l-accordion__title h3 {
+    padding-left: 1rem;
+  }
+  .collective .gwc.accordion .l-accordion .l-accordion__title h3 {
+    padding-left: 1rem;
+  }
+  .genesis .gwc.accordion .l-accordion .l-accordion__title {
+    padding-right: 0;
+  }
+  .collective .gwc.accordion .l-accordion .l-accordion__title {
+    padding-right: 0;
+  }
+
+}
+
+.genesis .gwc.accordion .l-accordion .l-accordion__title h3 {
+  font-size: 2rem;
+  line-height: 1.8rem;
+}
+
+.collective .gwc.accordion .l-accordion .l-accordion__title h3 {
+  font-size: 2rem;
+  line-height: 1.8rem;
 }

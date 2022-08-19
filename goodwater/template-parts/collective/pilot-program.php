@@ -133,7 +133,7 @@
                     dots: false,
                     arrows: false,
                     centerMode: false,
-                    autoplay: true,
+                    autoplay: false,
                     fade: true,
                     adaptiveHeight: false,
                 });
@@ -165,7 +165,7 @@
                     dots: false,
                     arrows: false,
                     centerMode: false,
-                    autoplay: true,
+                    autoplay: false,
                     fade: true,
                     adaptiveHeight: false,
                 });
