@@ -102,9 +102,26 @@ footer.footer-text {
   }
 }
 
-.collective .gwc.consumer.pilot-program {
-  padding-top: 2.5625rem;
+@media screen and (max-width: 990px) {
+  .collective .gwc.consumer.pilot-program {
+    padding-top: 2.5625rem;
+  }
 }
+
+@media screen and (min-width: 991px) and (max-width: 1400px) {
+  .gwc.consumer.pilot-program .container--full {
+    padding: 0 1.5rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .collective .gwc.consumer .consumer__wrap {
+    padding: 1.875rem 0 2.75rem;
+  }
+}
+
+
+
 
 @media screen and (max-width: 990px) {
   .genesis .gwc.manifesto {
@@ -649,17 +666,17 @@ footer.footer-text {
     padding-right: 0;
   }
 
+  .genesis .gwc.accordion .l-accordion .l-accordion__title h3 {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
+
+  .collective .gwc.accordion .l-accordion .l-accordion__title h3 {
+    font-size: 2rem;
+    line-height: 1.8rem;
+  }
 }
 
-.genesis .gwc.accordion .l-accordion .l-accordion__title h3 {
-  font-size: 2rem;
-  line-height: 1.8rem;
-}
-
-.collective .gwc.accordion .l-accordion .l-accordion__title h3 {
-  font-size: 2rem;
-  line-height: 1.8rem;
-}
 
 .gwc.manifesto--about .manifesto__wrap .manifesto__content {
   margin: 0 0;
@@ -677,12 +694,6 @@ footer.footer-text {
 
 .gwc.manifesto--about .manifesto__wrap .manifesto__content h3 {
   margin-top: unset;
-}
-
-@media screen and (min-width: 991px) {
-  .gwc.manifesto--about .container--full {
-    padding: 0 0 0 1.5rem;
-  }
 }
 
 .gwc.manifesto--about .manifesto__wrap .manifesto__content h3 {
@@ -706,9 +717,7 @@ footer.footer-text {
 .gwc.healthcare .healthcare__box .healthcare__content p {
   display: block;
 }
-.gwc.healthcare .healthcare__box .healthcare__content a {
-  display: unset;
-}
+
 @media screen and (min-width: 991px) {
   .gwc.healthcare .healthcare__box {
     padding: 5.1875rem 4.875rem;
@@ -733,11 +742,15 @@ footer.footer-text {
   .gwc.investment {
     padding: 9.375rem 0 11.1875rem
   }
-  .gwc.investment .container {
-    margin-left: 10rem;
+  .gwc.investment .container > .healthcare__slider {
+    margin-left: 15%;
   }
 
 }
 
-
-
+/*TODO fix this on main.css listed @media screen (min-width: 991px) and (min-width: 1440px), should be max-width: 1440px*/
+@media screen and (min-width: 1440px) {
+  .gwc.model .model__wrap .model__title {
+    padding-right: 5rem;
+  }
+}
