@@ -2,14 +2,11 @@
     <div class="container container--full">
         <div class="healthcare__box">
             <div class="healthcare__consumer">
-                <?php if( get_field('about_mobile_label') ):?>
-                    <h2 class="is--mobile"><span> <?php echo esc_html(get_field('about_mobile_label'));?> </span></h2>
+                <?php if( get_field('about_label') ):?>
+                    <span class="l-caption"><?php echo esc_html(get_field('about_mobile_label'));?> </span>
                 <?php endif;
                 if( get_field('about_heading')):?>
                     <?php echo apply_filters('the_content',get_field('about_heading')); ?>
-                <?php endif;
-                if( get_field('about_sub_heading') ):?>
-                    <h3><?php echo esc_html(get_field('about_sub_heading'));?> </h3>
                 <?php endif;?>
             </div>
             <div class="healthcare__content">

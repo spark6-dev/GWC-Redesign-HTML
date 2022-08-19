@@ -694,3 +694,50 @@ footer.footer-text {
     margin-top: 1.5rem;
   }
 }
+
+.gwc.healthcare .healthcare__box h3 {
+  font-family: "Untitled Serif";
+  font-weight: 700;
+  padding-top: 1.875rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  max-width: unset;
+}
+.gwc.healthcare .healthcare__box .healthcare__content p {
+  display: block;
+}
+.gwc.healthcare .healthcare__box .healthcare__content a {
+  display: unset;
+}
+@media screen and (min-width: 991px) {
+  .gwc.healthcare .healthcare__box {
+    padding: 5.1875rem 4.875rem;
+  }
+  .gwc.healthcare .healthcare__box h3 {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    max-width: calc(100% - 20rem);
+  }
+  .gwc.healthcare .healthcare__box .healthcare__content {
+    display: block;
+    align-items: unset;
+  }
+  .gwc.healthcare .healthcare__box .healthcare__content p {
+    border-right: none;
+    max-width: calc(100% - 20rem);
+  }
+  .gwc.healthcare .healthcare__box .healthcare__content .l-btn {
+    margin-top: 1.875rem;
+    margin-left: 0;
+  }
+  .gwc.investment {
+    padding: 9.375rem 0 11.1875rem
+  }
+  .gwc.investment .container {
+    margin-left: 10rem;
+  }
+
+}
+
+
+
