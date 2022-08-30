@@ -1,3 +1,4 @@
+<div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; height: 3900px; padding: 0px 0px 3000px;">
 <div class="gwc goal">
     <div class="container">
         <div class="goal__wrapper is--desktop">
@@ -762,4 +763,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
