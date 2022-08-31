@@ -1,4 +1,4 @@
-/* Commit: a3a289403dfc60e09d78ff47d8ca775869a9dbf6 */
+/* Commit: 65b0f23ddb5e1e0aedc005ffbd04e2a2523c5858 */
 :root {
   --menu-height: 100px;
   --goal-point-height: 2.3rem;
@@ -7,7 +7,7 @@
 @media (min-width: 992px) {
   .gwc.goal .goal__wrapper {
     padding: 0 0;
-    min-height: calc(100vh - var(--menu-height)) !important;
+    min-height: calc(600px - var(--menu-height)) !important;
   }
   .gwc.goal .goal__wrapper .goal__container .goal__thumb {
     top: 0;
@@ -49,6 +49,11 @@
     height: calc(100vh - var(--menu-height));
     width: 100%;
     display: flex;
+  }
+
+  .gwc.goal .goal__wrapper .goal__container .goal__slide[data-slide="2"] .goal__subslide .goal__ellipse {
+    background: radial-gradient(#fff, transparent);
+    background-repeat: no-repeat;
   }
 
   .gwc.goal .goal__subslide_wrapper {
@@ -150,11 +155,12 @@
     font-family: "Untitled Serif";
     font-weight: 700;
   }
+
   .gwc.goal .goal__point_title,
   .gwc.goal .goal__subslide.goal__step {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 2rem;
-    box-shadow: 0 0 2rem 2rem rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 2rem 2rem rgba(255, 255, 255, 0.9);
   }
 
   .gwc.goal .goal__backgrounds {
@@ -193,8 +199,8 @@
   }
 
   .gwc.goal .goal__subslide.goal__step#goal__step__capital {
-    width: 24rem;
-    top: 12%;
+    width: 20rem;
+    top: 11%;
   }
 
   .gwc.goal .goal__subslide.goal__step#goal__step__collective {

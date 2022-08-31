@@ -1,4 +1,4 @@
-// Commit: a3a289403dfc60e09d78ff47d8ca775869a9dbf6
+// Commit: 65b0f23ddb5e1e0aedc005ffbd04e2a2523c5858
 $(window).on("load", function () {
   ScrollTrigger.normalizeScroll(true);
 
@@ -27,6 +27,8 @@ $(window).on("load", function () {
         scrub: 2,
         start: "-=10%",
         end: "+=300%",
+        snap: [0, 0.28, 0.41, 0.54, 0.73, 0.847, 1],
+        pinType: "fixed"
       },
     });
 
