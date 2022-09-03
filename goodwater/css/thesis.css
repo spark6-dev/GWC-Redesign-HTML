@@ -726,3 +726,85 @@
     max-width: 100%;
   }
 }
+
+
+.thesis-page .data-cta-container {
+  padding: 60px 24px;
+}
+
+.thesis-page .data-cta-container > .data-cta-border {
+  border-top: 3px solid #4b5b75;
+  width: 40px;
+}
+
+.thesis-page .data-cta-container > .data-cta-header {
+  color: #4b5b75;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  padding-top: 20px;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+}
+
+.thesis-page .data-cta-container > .data-cta-header > .data-cta-icon {
+  margin: 0;
+  display: inline-block !important;
+  width: 48px;
+  height: auto;
+}
+
+.thesis-page .data-cta-container > .data-cta-header > .data-cta-title {
+  letter-spacing: 3px;
+  margin-left: 16px;
+  text-align: left;
+  position: relative;
+  top: 3px;
+}
+
+.thesis-page .data-cta-container > .data-cta-subtitle {
+  color: #9e9e9e;
+  font-family: Merriweather, serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.thesis-page .data-cta-container > .data-cta-button {
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .thesis-page .data-cta-container > .data-cta-header > .data-cta-title {
+    font-size: 18px;
+  }
+
+  .thesis-page .data-cta-container > .data-cta-subtitle {
+    font-size: 13px;
+  }
+
+  .thesis-page .data-cta-container a.data-cta-button {
+    font-size: 13px;
+  }
+}
+
+.thesis-page .button {
+  border: none;
+  cursor: pointer;
+  background-color: #77d9ec;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 4px;
+  letter-spacing: 1.2px;
+  padding: 20px 20px 18px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s ease all;
+  font-family: "CircularStd", sans-serif;
+}

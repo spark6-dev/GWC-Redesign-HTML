@@ -25,7 +25,7 @@ if (is_single()) {
 	{	
         $atts = shortcode_atts(
 			array(
-				'icon_src' => '/wp-content/uploads/2020/12/benchmark-icon.png',
+				'icon_src' => '/wp-content/uploads/2022/09/benchmark-icon.png',
                 'title' => 'Like the data you see here?',
                 'subtitle' => 'Find out how your key metrics compare against your competitors. Request a benchmark report for your company.',
                 'cta_href' => 'mailto:info@goodwatercap.com?subject=Benchmark report for my company',
