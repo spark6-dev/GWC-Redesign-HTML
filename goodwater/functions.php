@@ -161,6 +161,11 @@ function goodwater_scripts() {
     wp_enqueue_script( 'page-ahead-tabbis-js', get_template_directory_uri() . '/js/tabbis.es6.min.js', array(), _S_VERSION, true );
 	// Animation Script
 	wp_enqueue_script( 'page-ahead-animation-js', get_template_directory_uri() . '/js/animation.js', array(), _S_VERSION, true );
+    // Fancy box Script
+    wp_enqueue_script( 'page-ahead-fancybox-js', get_template_directory_uri() . '/js/thesis/jquery.fancybox.pack.js', array(), _S_VERSION, true );
+    //Thesis Script
+    wp_enqueue_script( 'page-ahead-thesis-js', get_template_directory_uri() . '/js/thesis/thesis.js', array(), _S_VERSION, true );
+
     wp_localize_script( 'page-ahead-wp-script-js', 'ajax_object',array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 }
 add_action( 'wp_enqueue_scripts', 'goodwater_scripts' );
