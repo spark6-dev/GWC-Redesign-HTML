@@ -219,6 +219,7 @@ function thesis_posts_query() {
     ));
 }
 
+/* Fix to get goodwatercap.com/thesis/page/2 to not return a 404 error */
 function remove_page_from_query_string($query_string)
 {
     if ($query_string['name'] == 'page' && isset($query_string['page'])) {
@@ -228,3 +229,13 @@ function remove_page_from_query_string($query_string)
     return $query_string;
 }
 add_filter('request', 'remove_page_from_query_string');
+
+/* Fix to use url goodwatercap.com/thesis instead of goodwatercap.com/category/thesis */
+function remove_category($string, $type) {
+    if ($type != 'single' && $type == 'category' && (strpos($string, 'category') !== false)) {
+        $url_without_category = str_replace("/category/", "/", $string);
+        return trailingslashit($url_without_category);
+    }
+    return $string;
+}
+add_filter('user_trailingslashit', 'remove_category', 100, 2);
