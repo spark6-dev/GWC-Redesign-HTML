@@ -1647,7 +1647,11 @@
   fill: currentColor;
   height: 1em;
   position: relative; /* Align more nicely with capital letters */
-  top: -0.0625em;
+  top: -0.3rem;
   vertical-align: middle;
   width: 1em;
+}
+
+.thesis-page .content-wrapper {
+  margin: 110px 0 116px;
 }

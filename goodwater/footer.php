@@ -65,6 +65,13 @@
                   			<!-- Career Menu -->
                   			<?php get_template_part('template-parts/menu/career');?>
                 		</div>
+                        <div class="footer__thesis">
+                            <?php if( get_field('thesis_heading', 'option') ):?>
+                                <h3><?php echo esc_html( get_field('thesis_heading', 'option') );?></h3>
+                            <?php endif;?>
+                            <!-- Thesis Menu -->
+                            <?php get_template_part('template-parts/menu/thesis');?>
+                        </div>
                 		<!-- <div class="footer__resources"> -->
                   			<?php //if( get_field('resources_heading', 'option') ):?>
 	                      		<!-- <h3><?php //echo esc_html( get_field('resources_heading', 'option') );?></h3> -->

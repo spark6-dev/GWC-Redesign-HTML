@@ -52,6 +52,7 @@ function goodwater_setup() {
 			'header-main-menu'  => esc_html__( 'Header Main Menu', 'goodwater' ),
 			'career' 			=> esc_html__( 'Career', 'goodwater' ),
 			'resources'  		=> esc_html__( 'Resources', 'goodwater' ),
+            'thesis'  		    => esc_html__( 'Thesis', 'goodwater' ),
 			'legal'  			=> esc_html__( 'Footer Legal', 'goodwater' ),
 		)
 	);
