@@ -177,6 +177,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 $function_includes = array(
 	'theme-functions/custom-header.php', // custom header
 	'theme-functions/customizer.php',//customizer additions
+    'theme-functions/icon-functions.php',//template functions
 	'theme-functions/template-functions.php',//template functions
 	'theme-functions/template-tags.php', // template tags
 	'theme-functions/companies.php',//Custom function companies
@@ -205,3 +206,24 @@ foreach ( $function_includes as $file ) {
 	}
 	require_once $filepath;
 }
+
+function thesis_posts_query() {
+    global $wp_query;
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $wp_query = new WP_Query(array(
+        'category_name' => 'thesis',
+        'paged' => $paged,
+        'meta_key' => 'featured_order',
+        'orderby' => ['meta_value' => 'ASC', 'date' => 'DESC']
+    ));
+}
+
+function remove_page_from_query_string($query_string)
+{
+    if ($query_string['name'] == 'page' && isset($query_string['page'])) {
+        unset($query_string['name']);
+        $query_string['paged'] = $query_string['page'];
+    }
+    return $query_string;
+}
+add_filter('request', 'remove_page_from_query_string');

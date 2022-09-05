@@ -2,50 +2,45 @@
 /**
  * The template for displaying archive pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Goodwater
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.0
  */
-
 get_header();
 ?>
+<div class="archive-page content-template-page">
+    <div class="site-content-contain">
+        <?php
+        thesis_posts_query();
+        if ( have_posts() ) : ?>
+            <div id="posts-wrapper">
+                <?php
+                /* Start the Loop */
+                while ( have_posts() ) : the_post();
+                    /*
+                     * Include the Post-Format-specific template for the content.
+                     * If you want to override this in a child theme, then include a file
+                     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+                     */
+                    get_template_part( 'template-parts/thesis/content', get_post_format() );
 
-	<main id="primary" class="site-main">
+                endwhile;?>
+            </div>
 
-		<?php if ( have_posts() ) : ?>
+            <?php the_posts_pagination( array(
+                'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
+                'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+                'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+            ) );
 
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+        else :
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+            get_template_part( 'template-parts/thesis/content', 'none' );
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-
-<?php
-get_sidebar();
-get_footer();
+        endif; ?>
+    </div>
+    <?php get_footer(); ?>
+</div>
