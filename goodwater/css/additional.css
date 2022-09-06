@@ -47,6 +47,18 @@ footer.footer-text {
   }
 }
 
+.genesis .gwc.opportunities--about h3 {
+  padding-bottom: 2.1875rem;
+}
+.genesis .gwc.opportunities--about h3 p:first-child {
+  padding-bottom: 2.5rem;
+}
+@media screen and (max-width: 990px) {
+  .genesis .gwc.opportunities--about h3 p:first-child {
+    padding-bottom: 1.175rem;
+  }
+}
+
 .consumer__col {
   text-align: center;
 
