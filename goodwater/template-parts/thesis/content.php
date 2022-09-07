@@ -32,7 +32,9 @@
                         </div>
 						<h2><?php the_title();?></h2>
 						<div class="subtitle"><?php the_field('subtitle');?></div>
-						<a href="<?php the_permalink();?>" class="button">Read More</a>
+						<a href="<?php the_permalink();?>" class="l-btn l-btn--dark">Read More <i> <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.21047 1.17139H9.41407M9.41407 1.17139L9.17486 9.3715M9.41407 1.17139L0.500392 9.82837" stroke="white" stroke-width="1.25"></path>
+                                </svg></i></a>
 					</div>
 				</div>					
 		<?php endif;?>
