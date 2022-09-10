@@ -787,5 +787,64 @@ footer.footer-text {
 }
 
 .footer__thesis {
-  margin-bottom: 2.375rem;
+  margin-bottom: 2375rem;
+}
+
+.gwc.model.accordion .l-accordion .l-accordion__title span {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white
+}
+
+.gwc.model.accordion .l-accordion .l-accordion__title::after {
+  background-color: white;
+  -webkit-mask-image: url(../images/img-accordion.svg);
+  mask-image: url(../images/img-accordion.svg);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-image: unset;
+}
+
+.gwc.model.accordion .l-accordion .l-accordion__title h3 {
+  color: #B9E9F9;
+}
+
+.gwc.model.accordion p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+}
+
+.gwc.model.accordion .model__heading {
+  margin-bottom: 0;
+}
+
+.gwc.model.accordion .accordion__wrap {
+  margin-top: 1.65rem;
+}
+
+.gwc.model.accordion .model-link {
+  font-size: 0.9375rem;
+  color: white;
+}
+
+.gwc.model.accordion .model-link i{
+  padding-left: 0.3rem;
+}
+
+.gwc.model.accordion .model-link:hover{
+  text-decoration: underline;
+}
+
+.gwc.model.accordion .l-accordion__block {
+  max-width: 42rem;
+}
+
+.gwc.model.accordion .logo {
+  margin-top: -2rem;
+}
+
+.gwc.model.accordion .l-accordion__content__wrap {
+  display: flex;
+  gap: 5.9rem;
 }
