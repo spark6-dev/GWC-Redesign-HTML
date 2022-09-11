@@ -842,9 +842,42 @@ footer.footer-text {
 
 .gwc.model.accordion .logo {
   margin-top: -2rem;
+  max-width: 42rem;
+}
+
+@media screen and (max-width: 575px) {
+  .gwc.model.accordion .logo {
+    display: none;
+  }
 }
 
 .gwc.model.accordion .l-accordion__content__wrap {
   display: flex;
   gap: 5.9rem;
+}
+@media screen and (max-width: 1200px) {
+  .gwc.model.accordion .l-accordion__content__wrap {
+    flex-direction: column-reverse;
+    gap: unset;
+  }
+  .gwc.model.accordion .logo {
+    margin-top: unset;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .gwc.model.accordion .l-accordion__block {
+    padding-left: 5.375rem;
+    padding-bottom: 3.0625rem;
+    padding-top: 0.9375rem;
+  }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  .gwc.model.accordion .logo {
+    padding-left: 5.375rem;
+    padding-bottom: 2.5rem;
+  }
 }
