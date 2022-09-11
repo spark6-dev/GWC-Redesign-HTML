@@ -846,8 +846,33 @@ footer.footer-text {
 }
 
 @media screen and (max-width: 575px) {
-  .gwc.model.accordion .logo {
+  .gwc.model.accordion .accordion__wrap {
     display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .gwc.model.accordion .model__wrap {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .gwc.model .model__heading h3 {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+  .gwc.model .model__heading h3::before {
+    background-color: #ffffff;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .gwc.model {
+    padding: 3rem 0 3rem;
   }
 }
 
@@ -880,4 +905,9 @@ footer.footer-text {
     padding-left: 5.375rem;
     padding-bottom: 2.5rem;
   }
+}
+
+.gwc.model.accordion .slick-dots {
+  position: unset;
+  margin-top: 1.875rem;
 }
