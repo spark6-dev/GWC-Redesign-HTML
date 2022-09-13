@@ -129,6 +129,9 @@
                                     <?php endif;?>
                                 </div>
                                 <div class="logo">
+                                    <div class="overlay_wrapper">
+                                        <div class="overlay <?php echo get_sub_field('model_heading') ?>"></div>
+                                    </div>
                                     <svg width="100%" height="330" viewbox="0 0 657 330" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g id="GCP Loop Logo">
                                             <g id="Frame" clip-path="url(#clip0_1752_6700)"></g>
