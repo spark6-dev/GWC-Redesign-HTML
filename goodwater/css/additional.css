@@ -853,6 +853,7 @@ footer.footer-text {
 .gwc.model.accordion .logo {
   margin-top: -2rem;
   max-width: 42rem;
+  flex-grow: 1;
 }
 
 @media screen and (max-width: 575px) {

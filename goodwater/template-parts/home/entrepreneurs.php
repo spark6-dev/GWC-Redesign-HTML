@@ -7,7 +7,7 @@
                 <?php endif;?>
                 <?php $link = get_field('entrepreneurs_section_link');
                 if($link):?>
-                    <a class="l-btn l-btn--dark" href="<?php echo $link['url'];?>" title="<?php echo $link['title'];?>"><?php echo $link['title'];?><i> <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="l-btn l-btn--dark" href="<?php echo $link['url'];?>" target="<?php echo $link['target'];?>" title="<?php echo $link['title'];?>"><?php echo $link['title'];?><i> <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.21047 1.17139H9.41407M9.41407 1.17139L9.17486 9.3715M9.41407 1.17139L0.500392 9.82837" stroke="white" stroke-width="1.25"></path>
                   </svg></i></a>
                 <?php endif;?>
@@ -43,7 +43,7 @@
                                     <div class="meet__content">
                                         <?php echo apply_filters('the_content', $content);?>
                                         <?php if($link):?>
-                                            <a href="<?php echo $link['url'];?>" title="<?php echo $title .' '. $link['title'];?>" target="_blank"><?php echo $link['title'];?></a>
+                                            <a href="<?php echo $link['url'];?>" target="<?php echo $link['target'];?>" title="<?php echo $title .' '. $link['title'];?>" target="_blank"><?php echo $link['title'];?></a>
                                         <?php endif;?>
                                     </div>
                                     <?php if($label):?>
