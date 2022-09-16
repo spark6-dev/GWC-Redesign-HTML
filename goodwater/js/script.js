@@ -8952,6 +8952,7 @@ $(window).on("load", function () {
             variableWidth: false,
             pauseOnHover: false,
             pauseOnDotsHover: false,
+            dots: false,
           },
         },
       ],
