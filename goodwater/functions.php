@@ -244,3 +244,27 @@ function remove_category($string, $type) {
     return $string;
 }
 add_filter('user_trailingslashit', 'remove_category', 100, 2);
+
+
+function insert_og_image_head() {
+    $file = 'home.jpg';
+
+    if (is_page_template('page-templates/about.php')) {
+        $file = 'about.jpg';
+    } else if (is_page_template('page-templates/capital.php')) {
+        $file = 'capital.jpg';
+    } else if (is_page_template('page-templates/collective.php')) {
+        $file = 'collective.jpg';
+    } else if (is_page_template('page-templates/genesis.php')) {
+        $file = 'genesis.jpg';
+    } else if (is_page_template('page-templates/portfolio.php')) {
+        $file = 'portfolio.jpg';
+    } else if (is_page_template('page-templates/stash.php')) {
+        $file = 'stash.jpg';
+    }
+
+    $thumbnail_src =  get_template_directory_uri() . '/images/open-graph/' . $file;
+    echo '<meta property="og:image" content="' . $thumbnail_src . '"/>';
+
+}
+add_action( 'wp_head', 'insert_og_image_head', 5 );
