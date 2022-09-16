@@ -8,7 +8,7 @@ require_once(ABSPATH . 'wp-load.php');?>
 <?php 
 function get_companies(){
 	// Filename
-	$file = get_theme_file_uri() .'/inc/company-csv/Goodwater Portcos 20220608.csv';
+	$file = get_theme_file_uri() .'/inc/company-csv/Goodwater Portcos 20220713.csv';
 	$data = $header = array(); 
 	$i = 0;
 	$handle = fopen($file, "r");
@@ -65,7 +65,7 @@ if( !empty($companies) ){
 		$company_category 	   = $company["Category"];
 		$company_content 	   = $company["One-liner"];   
 
-		echo $company_name.'<br>';
+        echo $company_name.'<br>';
 
 		if( strpos($company_category, ',') !== false ) {
 		    $company_category = explode (",", $company_category);
@@ -127,7 +127,7 @@ if( !empty($companies) ){
 			}else{
 				wp_set_object_terms( $new_company_id, $company_category, 'company_category');
 			}
-			update_field('locationcountrystate', $company_country_state, $company_id);
+			update_field('locationcountrystate', $company_country_state, $new_company_id);
             update_field('link', $link_array, $new_company_id);
         }
 	}
