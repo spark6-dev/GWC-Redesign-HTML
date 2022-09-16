@@ -34,6 +34,7 @@
 
 .content-template-page .container {
   width: 900px;
+  padding: 0;
 }
 .content-template-page .gwc.footer .container {
   width: unset;
