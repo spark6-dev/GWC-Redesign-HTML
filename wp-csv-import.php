@@ -8,7 +8,7 @@ require_once(ABSPATH . 'wp-load.php');?>
 <?php 
 function get_companies(){
 	// Filename
-	$file = get_theme_file_uri() .'/inc/company-csv/Goodwater Portcos 20220713.csv';
+	$file = get_theme_file_uri() .'/inc/company-csv/Goodwater-Portcos-20220713.csv';
 	$data = $header = array(); 
 	$i = 0;
 	$handle = fopen($file, "r");

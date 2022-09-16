@@ -9,7 +9,9 @@
     ) );
     $growth_stages = get_terms( array(
         'taxonomy' => 'growth_stage',
-        'hide_empty' => false
+        'hide_empty' => false,
+        'orderby' => 'term_id',
+        'order' => 'ASC'
     ) );
 ?>
 <div class="gwc filter">
