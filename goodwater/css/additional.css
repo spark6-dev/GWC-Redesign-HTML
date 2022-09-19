@@ -984,3 +984,143 @@ footer.footer-text {
     max-width: 25.975rem;
   }
 }
+
+
+@media screen and (min-width: 623px) {
+  .gwc.meet {
+    padding: 4.875rem 0 8.875rem; } }
+
+
+@media screen and (min-width: 1400px) {
+  .gwc.meet {
+    padding: 4.875rem 0 12.875rem; } }
+
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card {
+    margin: 0;
+    padding: 1rem 1.75rem;
+    height: 100%; } }
+
+@media screen and (min-width: 1120px) {
+  .gwc.meet .meet__card {
+    padding: 2.1875rem 4.3125rem;
+  } }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card .meet__headings {
+    margin-bottom: 1.375rem; } }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card h2 {
+    font-size: 4.5rem;
+    line-height: 4.4375rem;
+    margin-bottom: 0; } }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card .l-tag {
+    margin-bottom: 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.0625rem;
+    letter-spacing: -0.005em; } }
+
+@media screen and (min-width: 1400px) {
+  .gwc.meet .meet__card .l-tag {
+    margin-bottom: 3.5625rem; } }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card h4 {
+    position: static;
+    font-size: 1.875rem;
+    line-height: 2.8125rem; } }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card .meet__content {
+    padding-bottom: 1rem;
+    max-width: 12rem;
+    padding-right: 0; } }
+
+@media screen and (min-width: 800px) {
+  .gwc.meet .meet__card .meet__content {
+    max-width: 13rem;} }
+
+@media screen and (min-width: 991px) {
+  .gwc.meet .meet__card .meet__content {
+    max-width: 18rem; } }
+
+@media screen and (min-width: 1400px) {
+  .gwc.meet .meet__card .meet__content {
+    padding-bottom: 2.875rem; } }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card .meet__content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.4375rem;
+    min-height: 0;} }
+
+@media screen and (min-width: 800px) {
+  .gwc.meet .meet__card .meet__content p {
+    padding-bottom: 1rem;} }
+
+@media screen and (min-width: 1080px) {
+  .gwc.meet .meet__card .meet__content p {
+    min-height: 10.125rem;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .gwc.meet .meet__card .meet__content p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-bottom: 1rem;
+    min-height: 12.125rem;  } }
+
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card .meet__thumb {
+    max-width: calc(100% - 16rem);
+    right: 2.5rem;
+    bottom: -1.25rem;
+    left: auto;
+    top: auto; } }
+
+@media screen and (min-width: 800px) {
+  .gwc.meet .meet__card .meet__thumb {
+    right: 3.5rem;
+    max-width: calc(100% - 21rem); }}
+
+@media screen and (min-width: 991px) {
+  .gwc.meet .meet__card .meet__thumb {
+    right: 5.9375rem;
+    bottom: -2.25rem;
+    max-width: calc(100% - 30rem); } }
+
+@media screen and (min-width: 1400px) {
+  .gwc.meet .meet__card .meet__thumb {
+    bottom: -4.25rem;} }
+
+.gwc.meet .meet__card .meet__button {
+  bottom: 12.625rem;
+}
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card .meet__button {
+    right: -5.9rem;
+    top: 3.275rem; } }
+
+@media screen and (min-width: 991px) {
+  .gwc.meet .meet__card .meet__button {
+    right: -2.35rem;
+    top: 7.275rem; } }
+
+@media screen and (min-width: 1120px) {
+  .gwc.meet .meet__card .meet__button {
+    right: -1.4375rem;
+    top: 11.875rem;} }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__card .meet__button p {
+    font-weight: 500; } }
+
+@media screen and (min-width: 623px) {
+  .gwc.meet .meet__nav {
+    justify-content: space-between; } }
