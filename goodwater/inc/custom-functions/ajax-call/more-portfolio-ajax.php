@@ -1,29 +1,24 @@
-<?php 
+<?php
+
+require_once 'portfolio-filter.php'; //to get toFilter method
+
 // Portfolio load more
 function more_portfolio_ajax(){
     if(isset($_POST['page'])){
         $page       = $_POST['page'] + 1;
         $limit      = $_POST['limit'];
-        $taxonomy   = $_POST['taxonomy'];
         $val        = $_POST['val'];
         header("Content-Type: text/html");
 
-        if($taxonomy){
+        if(is_array($val)){
             $args = array(
                 'post_type'         => 'companies',
                 'post_status'       => 'publish',
                 'posts_per_page'    => $limit,
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => $taxonomy,
-                        'field'    => 'term_id',
-                        'terms'    => $val,
-             
-                    ),
-                ),
+                'tax_query'         => array_map('toFilter', $val),  //toFilter is in ajax-call/portfolio.php
                 'paged'             => $page,
             );
-        }else if( $taxonomy == '' && $val != '' ){
+        }else if( $val != '' ){
             $args = array(
                 'post_type'         => 'companies',
                 'post_status'       => 'publish',

@@ -20,30 +20,45 @@ jQuery(document).ready(function(){
 	    var catArr   = [];
 	    var stageArr = [];
 	    jQuery('.filter__search input').val('');
-	    jQuery(this).parents("ul.filter__subnav").find("li").each(function(){
-		    if(jQuery(this).hasClass( "active" )){
-		    	if (typeof jQuery(this).find("a").data('location') !== 'undefined') {
-					var location = jQuery(this).find("a").data('location');
-					locArr.push(location);
-				}else if (typeof jQuery(this).find("a").data('category') !== 'undefined') {
-					var category = jQuery(this).find("a").data('category');
-					catArr.push(category);
-				}else if (typeof jQuery(this).find("a").data('growth-stage') !== 'undefined') {
-					var growthStage = jQuery(this).find("a").data('growth-stage');
-					stageArr.push(growthStage);
-				}
-		    }
+	    jQuery(this).parents("div.filter__nav").find('.filter__subnav > li.active').each(function(){
+			if (typeof jQuery(this).find("a").data('location') !== 'undefined') {
+				var location = jQuery(this).find("a").data('location');
+				locArr.push(location);
+			}else if (typeof jQuery(this).find("a").data('category') !== 'undefined') {
+				var category = jQuery(this).find("a").data('category');
+				catArr.push(category);
+			}else if (typeof jQuery(this).find("a").data('growth-stage') !== 'undefined') {
+				var growthStage = jQuery(this).find("a").data('growth-stage');
+				stageArr.push(growthStage);
+			}
 		});
 
+		var filterArr = [];
+
 	    if (locArr.length !== 0) {
-	    	removeDivs();
-		    portfolioFilter("filter","location",locArr,18);
-		}else if(catArr.length !== 0){
+			filterArr.push({
+				taxonomy: 'location',
+				terms: locArr
+			});
+		}
+
+		if(catArr.length !== 0){
+			filterArr.push({
+				taxonomy: 'company_category',
+				terms: catArr
+			});
+		}
+
+		if(stageArr.length !== 0){
+			filterArr.push({
+				taxonomy: 'growth_stage',
+				terms: stageArr
+			});
+		}
+
+		if (filterArr.length !== 0) {
 			removeDivs();
-			portfolioFilter("filter","company_category",catArr,18);
-		}else if(stageArr.length !== 0){
-			removeDivs();
-			portfolioFilter("filter","growth_stage",stageArr,18);
+			portfolioFilter("filter",filterArr,18);
 		}else{
 			removeDivs();
 			load_portfolio( 18 );
@@ -55,19 +70,22 @@ jQuery(document).ready(function(){
 	jQuery('.filter__searchbar button').on("click",function(e){
 		e.preventDefault();
 		jQuery(".filter__nav.is--desktop .filter__subnav li").removeClass('active');
+		jQuery(".l-checkbox input[type=checkbox]")
+			.not($(this).parents(".filter__tab").find("input[type=checkbox]"))
+			.removeAttr("checked");
 		if(jQuery(this).parent().find("#searchPortfolio").val().length > 2){
 			var keyword = jQuery(this).parent().find("#searchPortfolio").val();
 	      	removeDivs();
 			if(jQuery(window).width() <= 480){
-			    portfolioFilter("search"," ",keyword,5);
+			    portfolioFilter("search",keyword,5);
 			}else{
-				portfolioFilter("search"," ",keyword,18);
+				portfolioFilter("search",keyword,18);
 			}
 		}
 	});
 
 	jQuery('.filter__searchbar input').on("keyup", function(e) {
-		if(jQuery(this).val() == ''){
+		if(jQuery(this).val() === ''){
 			if(jQuery(window).width() <= 480){
 				removeDivs();
 				load_portfolio(5);
@@ -94,18 +112,33 @@ jQuery(document).ready(function(){
 				growthStageFilter.push(jQuery(this).val());
 			}
 		});
+		var filterArr = []
+
 		if (locFilter.length !== 0) {
-	    	removeDivs();
-			jQuery(".filter__search-head .js-filter").trigger("click");
-		    portfolioFilter("filter","location",locFilter,5);
-		}else if(catFilter.length !== 0){
+			filterArr.push({
+				taxonomy: 'location',
+				terms: locFilter
+			})
+		}
+
+		if(catFilter.length !== 0){
+			filterArr.push({
+				taxonomy: 'company_category',
+				terms: catFilter
+			})
+		}
+
+		if(growthStageFilter.length !== 0){
+			filterArr.push({
+				taxonomy: 'growth_stage',
+				terms: growthStageFilter
+			})
+		}
+
+		if (filterArr.length !== 0) {
 			removeDivs();
 			jQuery(".filter__search-head .js-filter").trigger("click");
-			portfolioFilter("filter","company_category",catFilter,5);
-		}else if(growthStageFilter.length !== 0){
-			removeDivs();
-			jQuery(".filter__search-head .js-filter").trigger("click");
-			portfolioFilter("filter","growth_stage",growthStageFilter,5);
+			portfolioFilter("filter",filterArr,5);
 		}else{
 			removeDivs();
 			jQuery(".filter__search-head .js-filter").trigger("click");
@@ -168,7 +201,7 @@ function load_portfolio( limit ){
 }
 
 // ajax load more portfolio
-function load_more_portfolio(loadLimit,page,taxonomy,val){
+function load_more_portfolio(loadLimit,page,val){
 	jQuery(".gwc.filter .no-post-found").css("display", "none");
     var maxPages = jQuery('.filter__load-more').attr('data-max-pages');
     var url 	 = ajax_object.ajax_url;
@@ -176,7 +209,6 @@ function load_more_portfolio(loadLimit,page,taxonomy,val){
         'action': 'more_portfolio_ajax',
         'page': page,
         'limit': loadLimit,
-        'taxonomy' : taxonomy,
         'val' : val
     };
     jQuery.ajax({
@@ -212,13 +244,12 @@ function load_more_portfolio(loadLimit,page,taxonomy,val){
 }
 
 // Filtering and Search
-function portfolioFilter( type, taxonomy, val, limit){
+function portfolioFilter( type, val, limit){
 	jQuery(".gwc.filter .no-post-found").css("display", "none");
 	var url = ajax_object.ajax_url;
     var data = {
         'action': 'portfolio_filter_ajax',
         'type': type,
-        'taxonomy': taxonomy,
         'val': val,
         'limit': limit
     };
@@ -240,7 +271,7 @@ function portfolioFilter( type, taxonomy, val, limit){
                         e.preventDefault();
                         var page  = jQuery(this).attr('data-page');
                         if( jQuery(this).attr("data-type") === 'filter' ){
-	                        load_more_portfolio(5, page, taxonomy, val);
+	                        load_more_portfolio(5, page, val);
                         }else if( jQuery(this).attr("data-type") === 'search' ){
                         	load_more_portfolio(5, page, '', val);
                         }
@@ -250,7 +281,7 @@ function portfolioFilter( type, taxonomy, val, limit){
                         e.preventDefault();
                         var page  = jQuery(this).attr('data-page');
                         if( jQuery(this).attr("data-type") === 'filter' ){
-	                        load_more_portfolio(18, page, taxonomy, val);
+	                        load_more_portfolio(18, page, val);
                         }else if( jQuery(this).attr("data-type") === 'search' ){
                         	load_more_portfolio(18, page, '', val);
                         }

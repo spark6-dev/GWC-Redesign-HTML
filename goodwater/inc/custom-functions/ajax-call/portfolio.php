@@ -1,4 +1,14 @@
-<?php 
+<?php
+
+function toFilter($val)
+{
+    return array(
+        'taxonomy' => $val['taxonomy'],
+        'field'    => 'term_id',
+        'terms'    => $val['terms'],
+    );
+}
+
 // Portfolio load more
 function load_portfolio_ajax(){
     if(isset($_POST['limit'])){

@@ -1,11 +1,12 @@
-<?php 
+<?php
+
 // Portfolio load more
 function portfolio_filter_ajax(){
     if(isset($_POST['type'])){
         $type     = $_POST['type'];
-        $taxonomy = $_POST['taxonomy'];
         $val      = $_POST['val'];
         $limit    = $_POST['limit'];
+
         header("Content-Type: text/html");
         if( $type == 'filter' ){
             $type_attr = 'filter';
@@ -13,14 +14,7 @@ function portfolio_filter_ajax(){
                 'post_type'         => 'companies',
                 'post_status'       => 'publish',
                 'posts_per_page'    => $limit,
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => $taxonomy,
-                        'field'    => 'term_id',
-                        'terms'    => $val,
-             
-                    ),
-                ),
+                'tax_query' => array_map('toFilter', $val),  //toFilter is in ajax-call/portfolio.php
             );
         }else if( $type == 'search' ){
             $type_attr = 'search';

@@ -9113,21 +9113,9 @@ $(document).ready(function () {
     e.preventDefault();
     e.stopPropagation();
     $(this).parent("li").toggleClass("active");
-    $(".filter__subnav")
-      .find("li")
-      .not($(this).parents(".filter__subnav").find("li"))
-      .removeClass("active");
   });
 });
 //filter script for opening and closing ends here
-
-// filter mobile scripts starts here
-$(".filter__tab input[type=checkbox]").on("click", function () {
-  $(".l-checkbox input[type=checkbox]")
-    .not($(this).parents(".filter__tab").find("input[type=checkbox]"))
-    .removeAttr("checked");
-});
-// filter mobile scripts ends here
 
 // privacy policy scroll when clicking a tag scripts starts
 $(document).ready(function () {
