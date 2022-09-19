@@ -1124,3 +1124,57 @@ footer.footer-text {
 @media screen and (min-width: 623px) {
   .gwc.meet .meet__nav {
     justify-content: space-between; } }
+
+
+@media screen and (max-width: 990px) {
+  .gwc.healthcare.healthcare--slider {
+    max-width: 327px;
+  }
+  .gwc.healthcare .healthcare__box .healthcare__thumb {
+    right: 0;
+  }
+}
+@media screen and (max-width: 596px) {
+  .gwc.healthcare .healthcare__box .healthcare__thumb {
+    max-width: 406px;
+    bottom: -18.25rem;
+  }
+
+  .gwc.healthcare.healthcare--slider {
+    padding-top: 11.625rem;
+  }
+}
+
+@media screen and (min-width: 597px) and (max-width: 990px) {
+  .gwc.healthcare .healthcare__box .healthcare__content p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    max-width: calc(100% - 22rem);
+    padding-bottom: 2.0625rem;
+    min-height: 11rem;
+  }
+}
+
+@media screen and (min-width: 719px) and (max-width: 990px) {
+  .gwc.healthcare .healthcare__box .healthcare__content p {
+    max-width: calc(100% - 25rem);
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+  }
+}
+
+@media screen and (min-width: 597px) and (max-width: 990px) {
+
+  .gwc.healthcare .healthcare__box .healthcare__thumb {
+    bottom: -2rem;
+  }
+
+  .gwc.investment {
+    padding: 0;
+  }
+
+  .gwc.healthcare.healthcare--slider {
+    padding-top: 0;
+    margin-top: -2rem;
+  }
+}

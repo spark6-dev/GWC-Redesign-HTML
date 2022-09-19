@@ -22,10 +22,18 @@
             </div>
             <?php $thumb_img = get_field('about_image');
             if( $thumb_img ):?>
-                <div class="healthcare__thumb"> 
+                <div class="healthcare__thumb is--desktop">
                     <?php echo get_image(array('url'=>$thumb_img, 'set'=>'no')); ?>
                 </div>
             <?php endif;?>
+            <?php $thumb_img_mobile = get_field('about_image_mobile');
+            if( $thumb_img_mobile ):?>
+                <div class="healthcare__thumb is--mobile">
+                    <?php echo get_image(array('url'=>$thumb_img_mobile, 'set'=>'no')); ?>
+                </div>
+            <?php endif;?>
+
+
         </div>
     </div>
 </div>
