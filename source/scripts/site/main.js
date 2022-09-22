@@ -677,6 +677,13 @@ $(window).on("load", function () {
           $(".goal__pwrap--gen").addClass("is-hover");
           $(".goal__link--gen").addClass("is-hover");
         }, "<");
+      $(window).scroll(function () {
+        let progress = goalAnimate.progress();
+        console.log(progress);
+        if (progress > 0.83 && progress < 0.86) {
+          $(".goal__pwrap").removeClass("is-hover");
+        }
+      });
     }
 
     $(".goal__link").click(function () {
