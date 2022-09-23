@@ -501,6 +501,12 @@ footer.footer-text {
     padding-bottom: 2.5rem;
   }
 }
+@media screen and (min-width: 991px) and (max-width: 1376px) {
+  .gwc.impact .impact__cards .impact__card .card {
+    height: 17rem;
+    width: 24rem;
+  }
+}
 
 .gwc.impact .impact__title p {
   padding-bottom: 2.5rem;
@@ -848,12 +854,26 @@ footer.footer-text {
 
 .gwc.model.accordion .l-accordion__block {
   max-width: 42rem;
-}
 
+}
 .gwc.model.accordion .logo {
   margin-top: -2rem;
   max-width: 42rem;
   flex-grow: 1;
+}
+
+.gwc.model.accordion .l-accordion__content__wrap {
+  display: flex;
+  gap: 5.9rem;
+}
+
+@media screen and (min-width: 851px) and (max-width: 1300px) {
+  .gwc.model.accordion .l-accordion__block {
+    width: 70%;
+  }
+  .gwc.model.accordion .l-accordion__content__wrap {
+    gap: 4rem;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -887,11 +907,8 @@ footer.footer-text {
   }
 }
 
-.gwc.model.accordion .l-accordion__content__wrap {
-  display: flex;
-  gap: 5.9rem;
-}
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 850px) {
   .gwc.model.accordion .l-accordion__content__wrap {
     flex-direction: column-reverse;
     gap: unset;
@@ -904,9 +921,15 @@ footer.footer-text {
 
 @media screen and (min-width: 576px) {
   .gwc.model.accordion .l-accordion__block {
-    padding-left: 5.375rem;
+    padding-left: 4rem;
     padding-bottom: 3.0625rem;
     padding-top: 0.9375rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .gwc.model.accordion .l-accordion__block {
+    padding-left: 5.375rem;
   }
 }
 
@@ -934,7 +957,7 @@ footer.footer-text {
 
 
 
-@media screen and (min-width: 576px) and (max-width: 1200px) {
+@media screen and (min-width: 576px) and (max-width: 850px) {
   .gwc.model.accordion .logo {
     padding-left: 5.375rem;
     padding-bottom: 2.5rem;
