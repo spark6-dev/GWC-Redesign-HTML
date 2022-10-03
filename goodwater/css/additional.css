@@ -705,6 +705,9 @@ footer.footer-text {
     display: flex;
     justify-content: center;
   }
+}
+
+@media screen and (min-width: 577px) and (max-width: 990px) {
   .gwc.invest--about .invest__wrap img {
     max-width: 576px;
   }
