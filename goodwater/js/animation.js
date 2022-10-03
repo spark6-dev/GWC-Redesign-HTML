@@ -23,6 +23,7 @@ $(window).on("load", function () {
     const goalAnimate = gsap.timeline({
       scrollTrigger: {
         trigger: ".gwc.goal",
+        pin: ".gwc.goal",
         scrub: 2,
         start: "-=10%",
         end: "+=300%",
