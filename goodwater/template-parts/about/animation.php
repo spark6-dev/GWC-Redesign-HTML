@@ -642,13 +642,13 @@
             <div class="goal__arrow"><?php echo get_image(array('imgid'=> 649)); ?></div>
             <div class="goal__slider">
               	<div class="goal__slide">
-                	<div class="goal__slide-wrap"><?php echo get_image(array('imgid'=> 652)); ?><span class="goal__count">01</span></div>
+                	<div class="goal__slide-wrap"><img src="<?php echo get_template_directory_uri() . '/images/img-goalmobile.png'; ?>" alt="img-goalmobile"/><span class="goal__count">01</span></div>
               	</div>
               	<div class="goal__slide">
-                	<div class="goal__slide-wrap"><?php echo get_image(array('imgid'=> 653)); ?><span class="goal__count">02</span></div>
+                	<div class="goal__slide-wrap"><img src="<?php echo get_template_directory_uri() . '/images/img-slidercenter.png'; ?>" alt="img-slidercenter"/><span class="goal__count">02</span></div>
               	</div>
               	<div class="goal__slide">
-                	<div class="goal__slide-wrap"><?php echo get_image(array('imgid'=> 654)); ?><span class="goal__count">03</span></div>
+                	<div class="goal__slide-wrap"><img src="<?php echo get_template_directory_uri() . '/images/img-sliderright.png'; ?>" alt="img-sliderright"/><span class="goal__count">03</span></div>
               	</div>
             </div>
             <div class="goal__slider-values">
