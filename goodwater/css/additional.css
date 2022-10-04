@@ -1240,3 +1240,135 @@ footer.footer-text {
     margin-bottom: 2.1825rem;
   }
 }
+
+
+@media screen and (min-width: 991px) {
+  .inner-page.lake .gwc.header {
+    background-color: #5dbdf0;
+  }
+
+  .inner-page.lake .gwc.header .header__nav {
+    background-color: #5dbdf0;
+  }
+
+  .inner-page.lake .gwc.header .header__nav ul li a:hover {
+    color: #ffffff;
+  }
+}
+
+.gwc.banner--inner.lake {
+  background-color: #5dbdf0;
+  background-image: unset;
+  background-size: unset;
+}
+
+.gwc.banner--inner.company-banner {
+  padding-bottom: 0;
+}
+
+.gwc.banner--inner .invested_in {
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+  font-weight: 500;
+}
+
+.gwc.banner--inner .invested_in h5 {
+  font-size: 3rem;
+  line-height: 3.6rem;
+  font-weight: 400;
+  font-family: "Untitled Serif", serif;
+}
+.gwc.banner--inner .banner__details_wrap .r_col .banner_image {
+  position: absolute;
+}
+.gwc.banner--inner.company-banner {
+  overflow: visible;
+}
+.gwc.banner--inner .invested_in {
+  height: 0;
+}
+.gwc.banner--inner .banner__details_wrap {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 575px) {
+  .gwc.banner--inner .banner__details_wrap .r_col .banner_image {
+    width: 120vw;
+    left: 10vw;
+    top: max(min(8rem, 30vw), 4rem);
+  }
+  .gwc.banner--inner .banner__details_wrap .r_col .banner_image img {
+    width: 120vw;
+  }
+
+  .gwc.banner--inner .banner__details_wrap .l_col .company_logo {
+    padding-top: 1.25rem;
+    max-width: 50%;
+    height: 3rem;
+    padding-bottom: 92vw;
+  }
+  .gwc.banner--inner.company-banner {
+    padding-bottom: unset;
+    margin-bottom: calc(43vw + 7rem);
+  }
+
+  .gwc.banner--inner.company-banner .invested_in {
+    margin-bottom: -50vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .gwc.banner--inner.company-banner .banner__details_wrap {
+    flex-direction: row;
+  }
+
+  .gwc.banner--inner.company-banner {
+    margin-bottom: 12vw;
+  }
+  .gwc.banner--inner .banner__details_wrap .l_col {
+    width: 38%;
+  }
+  .gwc.banner--inner .banner__details_wrap .l_col .company_logo {
+    padding-top: 7vw;
+  }
+  .gwc.banner--inner .banner__details_wrap .l_col img {
+    width: 65%;
+    padding-bottom: 7vw;
+  }
+  .gwc.banner--inner .banner__details_wrap .r_col {
+    width: 62%;
+    position: relative;
+  }
+  .gwc.banner--inner .banner__details_wrap .r_col .banner_image {
+    position: absolute;
+  }
+  .gwc.banner--inner .invested_in h5 {
+    padding-top: 0.4675rem;
+  }
+
+  .gwc.banner--inner.company-banner .invested_in {
+    margin-bottom: calc(-6vw + 2rem);
+    padding-top: calc(6vw - 2rem);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gwc.banner--inner.banner__details_wrap .l_col img {
+    width: 65%;
+    padding-bottom: 5.5rem;
+  }
+  .gwc.banner--inner.company-banner {
+    margin-bottom: 9.4rem;
+  }
+
+  .gwc.banner--inner.company-banner .invested_in {
+    margin-bottom: calc(-3.5675rem - 0.4675rem);
+    padding-top: 3.5675rem;
+  }
+}
+
+
+
+.gwc.banner--inner.company-banner .banner__details {
+  padding-top: 1rem;
+}
