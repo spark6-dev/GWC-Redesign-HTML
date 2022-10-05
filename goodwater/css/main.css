@@ -172,19 +172,19 @@ img {
   background-color: #72cc7d !important; }
 
 .bg--gold {
-  background-color: #ffd05b; }
+  background-color: #ffd05b !important;; }
 
 .bg--lake {
-  background-color: #5dbdf0; }
+  background-color: #5dbdf0 !important;; }
 
 .bg--sky {
-  background-color: #b9e9f9; }
+  background-color: #b9e9f9 !important;; }
 
 .bg--violet {
   background-color: #9599ff !important; }
 
 .bg--paper {
-  background-color: #e7dfd9; }
+  background-color: #e7dfd9 !important; }
 
 .gwc.header {
   background: #181c4b;
