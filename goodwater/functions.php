@@ -259,8 +259,8 @@ function insert_og_image_head() {
         $file = 'genesis.jpg';
     } else if (is_page_template('page-templates/portfolio.php')) {
         $file = 'portfolio.jpg';
-    } else if (is_page_template('page-templates/stash.php')) {
-        $file = 'stash.jpg';
+    } else if (is_page_template('page-templates/company.php')) {
+        $file = strtolower(get_the_title()).'.jpg'; //ie stash, toss....
     }
 
     $thumbnail_src =  get_template_directory_uri() . '/images/open-graph/' . $file;

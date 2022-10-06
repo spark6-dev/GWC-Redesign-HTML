@@ -1,7 +1,7 @@
 <?php
 /**
  * The homepage template file
- * Template Name: Stash
+ * Template Name: Company
  * Template Type: page
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  * 
