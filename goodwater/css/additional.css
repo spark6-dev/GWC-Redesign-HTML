@@ -1372,3 +1372,69 @@ footer.footer-text {
 .gwc.banner--inner.company-banner .banner__details {
   padding-top: 1rem;
 }
+
+
+
+
+
+.gwc.overview .stats {
+  padding-top: 2.565rem;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.gwc.overview .stats h5 {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+@media screen and (max-width: 575px) {
+  .gwc.overview .stats h5 {
+    display: inline;
+  }
+  .gwc.overview .stats div {
+    display: inline;
+  }
+  .gwc.overview .stats ol {
+    display: inline;
+  }
+  .gwc.overview .stats ol > li {
+    display: inline;
+    margin-right: -0.3rem;
+  }
+  .gwc.overview .stats ol > li ~ li:before {
+    content: ', ';
+  }
+  .gwc.overview .stats p {
+    display: inline;
+  }
+  .gwc.overview .stats > li {
+    padding-bottom: 1.6875rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .gwc.overview .stats {
+    display: flex;
+    gap: 1rem;
+  }
+  .gwc.overview .stats > li {
+    flex-grow: 1;
+  }
+}
+
+.gwc.overview .company_hero {
+  margin: 0 -2rem;
+  padding-top: 2.125rem;
+}
+@media screen and (min-width: 576px) {
+  .gwc.overview .company_hero {
+    margin: 0 auto;
+    max-width: 1030px;
+    padding-top: 6.25rem;
+  }
+}
+
+
+
+
