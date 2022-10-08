@@ -1,5 +1,5 @@
 <div class="gwc story">
-    <div class="container">
+    <div class="container container--full">
         <?php if( get_field('story_label') ):?>
             <span class="l-caption"><?php echo esc_html(get_field('story_label'));?></span>
         <?php endif;?>
@@ -7,8 +7,12 @@
 <!--            --><?//=get_field('story_body')?>
             <div>
                 <div class="tc-heading">
-                    <h3>What if wealth building opportunities were more accessible for everyday Americans?</h3>
-                    <p>That’s the question Brandon Krieg and Ed Robinson asked one another while working on Wall Street. And the more they thought about it, the more they believed they could do something to create change.</p>
+                    <div>
+                        <h3>What if wealth building opportunities were more accessible for everyday Americans?</h3>
+                    </div>
+                    <div>
+                        <p>That’s the question Brandon Krieg and Ed Robinson asked one another while working on Wall Street. And the more they thought about it, the more they believed they could do something to create change.</p>
+                    </div>
                 </div>
                 <div>
                     <div class="pb-2 center medium-hide is--mobile">
@@ -33,8 +37,12 @@
                     </div>
                 </div>
                 <div class="tc-left-hug-img">
-                    <img src="http://localhost/goodwatercadev/wp-content/uploads/2022/10/stash_story_2.jpg" alt="" />
-                    <h3>Stash’s founders set out with a seemingly simple goal: to empower regular Americans to build wealth.</h3>
+                    <div>
+                        <img src="http://localhost/goodwatercadev/wp-content/uploads/2022/10/stash_story_2.jpg" alt="" />
+                    </div>
+                    <div>
+                        <h3>Stash’s founders set out with a seemingly simple goal: to empower regular Americans to build wealth.</h3>
+                    </div>
                 </div>
                 <div class="small">
                     <h3>Stash is a mission-oriented company. And that shows up in a lot of ways.</h3>
@@ -43,10 +51,13 @@
                     <p>One partnership has been a partnership with <span class="underline">YearUp</span>, designed to introduce students to the basics of investing by offering them $1,000 to invest in Smart Portfolio, a set-it-and-forget-it managed investment account. The other is a partnership with <span class="underline">Brooklyn Bank</span>, a non-profit that aims to foster financial independence in communities of color—together they hosted a Black Money Forum for thousands of people in New York.</p>
                 </div>
                 <div class="desktop-up-flex-section small">
-                    <img src="http://localhost/goodwatercadev/wp-content/uploads/2022/10/stash_story_3.jpg" alt="" />
-                    <p>Stash started small, with just a few offerings. But now, seven years into their journey, they offer a range of financial services, from IRAs to banking, and even investment products designed to help improve financial literacy for kids. And if you ask Brandon and Ed, they’ll say they’re still just scratching the surface. They are continually exploring new ways to support financial literacy, to improve access to investments, and more. They encourage investors to diversify, to invest little-by-little, and to get familiar with investing by actually taking the leap and becoming a part of the financial system.</p>
+                    <div>
+                        <img src="http://localhost/goodwatercadev/wp-content/uploads/2022/10/stash_story_3.jpg" alt="" />
+                    </div>
+                    <div>
+                        <p>Stash started small, with just a few offerings. But now, seven years into their journey, they offer a range of financial services, from IRAs to banking, and even investment products designed to help improve financial literacy for kids. And if you ask Brandon and Ed, they’ll say they’re still just scratching the surface. They are continually exploring new ways to support financial literacy, to improve access to investments, and more. They encourage investors to diversify, to invest little-by-little, and to get familiar with investing by actually taking the leap and becoming a part of the financial system.</p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>
