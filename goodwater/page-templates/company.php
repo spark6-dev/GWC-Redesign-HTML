@@ -15,6 +15,8 @@ get_header();?>
 <?php get_template_part('template-parts/inner-page/two-column-content'); ?>
 <!-- Company Stats Section -->
 <?php get_template_part('template-parts/company/overview'); ?>
+<!-- Story Section -->
+<?php get_template_part('template-parts/company/story'); ?>
 <!-- Learn more Section -->
 <?php get_template_part('template-parts/inner-page/bottom-text'); ?>
 
