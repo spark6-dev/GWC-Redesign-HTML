@@ -1353,6 +1353,9 @@ footer.footer-text {
 }
 
 @media screen and (min-width: 1280px) {
+  .gwc.banner--inner .banner__details_wrap .l_col .company_logo {
+    padding-top: 4rem;
+  }
   .gwc.banner--inner.banner__details_wrap .l_col img {
     width: 65%;
     padding-bottom: 5.5rem;
