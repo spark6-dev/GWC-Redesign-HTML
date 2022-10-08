@@ -9,7 +9,7 @@
             <?php endwhile; ?>
         </ul>
         <div class="company_hero">
-            <?=get_image(array('url'=>get_field('company_hero'))); ?>
+            <?=get_field('company_hero'); ?>
         </div>
     </div>
 </div>
