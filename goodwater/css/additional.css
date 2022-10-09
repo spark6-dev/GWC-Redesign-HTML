@@ -1544,7 +1544,7 @@ footer.footer-text {
     padding-left: 3rem;
   }
   .gwc.story .story_1_wrapper_medium_flex {
-    padding-bottom: 1.6875rem;
+    padding-bottom: 0;
   }
 }
 
@@ -1672,10 +1672,11 @@ footer.footer-text {
     max-width: 819px;
   }
 }
-
+.gwc.story .desktop-up-flex-section  img {
+  width: 100%;
+}
 @media screen and (max-width: 990px) {
   .gwc.story .desktop-up-flex-section  img {
-    width: 100%;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
   }
