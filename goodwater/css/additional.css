@@ -1695,7 +1695,43 @@ footer.footer-text {
   }
 }
 
+.gwc.photo-gallery .pilot-program-slider-controls {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.9375rem;
+}
+.gwc.photo-gallery .pilot-program-slider-controls .healthcare__nav {
+  padding-top: 0;
+}
+.gwc.photo-gallery .pilot-program-slider-controls .counter {
+  font-size: 0.875rem;
+  color: #4a5c76;
+  line-height: 1.3125rem;
+  padding-top: 0.6rem;
+}
+.gwc.photo-gallery {
+  padding-top: 1.875rem;
+}
+@media screen and (min-width: 576px) {
+  .gwc.photo-gallery {
+    padding-top: 3.125rem;
+  }
+}
+@media screen and (min-width: 991px) {
+  .gwc.photo-gallery {
+    padding-top: 5.9375rem;
+  }
+}
 
-
-
-
+.gwc.photo-gallery .photo-slider {
+  padding-top: 1.5675rem;
+}
+@media screen and (min-width: 576px) {
+  .gwc.photo-gallery .photo-slider {
+    padding-top: 4.4375rem;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.9375rem;
+  }
+}

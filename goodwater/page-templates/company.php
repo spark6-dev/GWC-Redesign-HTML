@@ -17,6 +17,8 @@ get_header();?>
 <?php get_template_part('template-parts/company/overview'); ?>
 <!-- Story Section -->
 <?php get_template_part('template-parts/company/story'); ?>
+<!-- Photo Gallery Section -->
+<?php get_template_part('template-parts/company/photos'); ?>
 <!-- Learn more Section -->
 <?php get_template_part('template-parts/inner-page/bottom-text'); ?>
 
