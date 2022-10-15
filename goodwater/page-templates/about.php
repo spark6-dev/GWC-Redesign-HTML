@@ -13,6 +13,8 @@ get_header(); ?>
 <?php get_template_part('template-parts/inner-page/banner',null,array('class'=>'banner--about')); ?>
 <!-- Two column Content Section -->
 <?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--about is--mobile')); ?>
+<!-- Animation Section (commented out because it is replaced with steps) -->
+<?php //get_template_part('template-parts/about/animation'); ?>
 <!-- Steps Section -->
 <?php get_template_part('template-parts/about/steps'); ?>
 <!-- Number Cards Section -->
