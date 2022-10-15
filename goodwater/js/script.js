@@ -9285,3 +9285,33 @@ function goalSlider() {
 }
 goalSlider();
 // goal slider slider(mobile) ends here
+
+//goal replacement
+window.goal_selected = "0";
+$(function() {
+  $('.gwc.goal .goal__selection__area').on('mouseenter',function (e) {
+    var selection = $(this).data('selection');
+    $(`.gwc.goal .goal__point.point-${selection}`).addClass('selected');
+    $(`.gwc.goal .goal__selection > [data-selection="${selection}"]`).addClass('selected');
+  });
+  $('.gwc.goal .goal__selection__area').on('mouseleave',function (e) {
+    var selection = $(this).data('selection');
+    if (selection !== window.goal_selected) {
+      $(`.gwc.goal .goal__point.point-${selection}`).removeClass('selected');
+      $(`.gwc.goal .goal__selection > [data-selection="${selection}"]`).removeClass('selected');
+    }
+  });
+  $('.gwc.goal .goal__selection__area').on('click', function () {
+    window.goal_selected = $(this).data('selection');
+    $(`.gwc.goal .goal__point`).removeClass('selected');
+    $(`.gwc.goal .goal__selection > *`).removeClass('selected');
+    $(`.gwc.goal .goal__point.point-${window.goal_selected}`).addClass('selected');
+    $(`.gwc.goal .goal__selection > [data-selection="${window.goal_selected}"]`).addClass('selected');
+    $(`.gwc.goal .goal__logo > img`).hide();
+    $(`.gwc.goal .goal__logo > img[data-selection="${window.goal_selected}"]`).show();
+    $(`.gwc.goal .goal__selection`).addClass('selected');
+    $(`.gwc.goal .goal__step__description`).hide();
+    $(`.gwc.goal .goal__step__description[data-selection="${window.goal_selected}"]`).show();
+  })
+});
+//

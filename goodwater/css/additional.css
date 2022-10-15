@@ -1752,3 +1752,168 @@ footer.footer-text {
   width: 100%;
   height: 100%;
 }
+
+
+.gwc.goal .goal__regen {
+  padding-top: 2.935rem;
+  font-size: 5.375rem;
+  line-height: 4.8125rem;
+  color: #181c4b;
+  font-weight: 400;
+  font-family: "Untitled Serif", serif;
+  max-width: 957px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 4.9375rem;
+}
+
+.gwc.goal .goal__regen em {
+  color: #5dbdf0;
+}
+
+.gwc.goal .goal__logo__container {
+  max-width: 1087px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gwc.goal .goal__logo {
+  position: relative;
+  padding-bottom: 1.885rem;
+}
+
+.gwc.goal .goal__logo > img {
+  width: 100%;
+}
+
+.gwc.goal .goal__meaning > p {
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: #181C4B;
+  font-family: "Untitled Sans", sans-serif;
+  margin-bottom: 0;
+}
+
+.gwc.goal .goal__meaning {
+  padding-bottom: 1.25rem;
+}
+
+.gwc.goal .goal__point {
+  transform: translateY(-50%);
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  line-height: 1.405rem;
+  background-color: #4A5C76;
+}
+
+.gwc.goal .goal__logo .goal__point {
+  position: absolute;
+  top: 46%;
+}
+
+.gwc.goal .goal__logo .goal__point.point-1 {
+  left: 4.5%;
+}
+.gwc.goal .goal__logo .goal__point.point-2 {
+  left: 48.5%;
+}
+.gwc.goal .goal__logo .goal__point.point-3 {
+  left: 92%;
+}
+.gwc.goal .goal__logo .goal__point.selected {
+  background-color: #5dbdf0
+}
+
+.gwc.goal .goal__selection {
+  display: flex;
+  gap: 1rem;
+}
+
+.gwc.goal .goal__selection.selected {
+  gap: unset;
+}
+
+.gwc.goal .goal__selection > * {
+  width: 100%;
+  border-bottom: solid 4px #4A5C76;
+  display: flex;
+  gap: 0.875rem;
+  justify-content: center;
+}
+
+.gwc.goal .goal__selection.selected > * {
+  border-bottom-color: #5dbdf0;
+}
+
+.gwc.goal .goal__selection > *:first-child {
+  justify-content: left;
+}
+
+.gwc.goal .goal__selection > *:last-child {
+  justify-content: right;
+}
+
+.gwc.goal .goal__step__description {
+  min-height: 146px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.8125rem;
+}
+
+.gwc.goal .goal__selection .goal__point {
+  transform: translateY(17%);
+}
+
+.gwc.goal .goal__selection__area  {
+  position: absolute;
+  z-index: 100;
+  top:0;
+  width: 33.3%;
+  height: calc(100% + 4rem);
+  cursor: pointer;
+}
+.gwc.goal .goal__selection__area.point-1 {
+  left: 0;
+}
+.gwc.goal .goal__selection__area.point-2 {
+  left: 33.3%;
+}
+.gwc.goal .goal__selection__area.point-3 {
+  left: 66.6%;
+}
+
+.gwc.goal .goal__selection > .selected h3 {
+  font-style: italic;
+  color: #5dbdf0
+}
+.gwc.goal .goal__selection > .selected .goal__point {
+  background-color: #5dbdf0
+}
+
+.gwc.goal .goal__step__description {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  min-height: 171px;
+}
+
+.gwc.goal .goal__step__description > *:first-child {
+  width: 30%;
+  color: #5DBDF0;
+  font-size: 1.5rem;
+  line-height: 1.95rem;
+  font-family: "Untitled Serif", serif;
+}
+
+.gwc.goal .goal__step__description > *:last-child {
+  width: 60%;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  color: #4A5C76;
+  font-family: "Untitled Sans", sans-serif;
+}

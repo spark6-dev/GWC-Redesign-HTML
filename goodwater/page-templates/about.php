@@ -13,8 +13,8 @@ get_header(); ?>
 <?php get_template_part('template-parts/inner-page/banner',null,array('class'=>'banner--about')); ?>
 <!-- Two column Content Section -->
 <?php get_template_part('template-parts/inner-page/two-column-content',null,array('class'=>'consumer--about is--mobile')); ?>
-<!-- Animation Section -->
-<?php get_template_part('template-parts/about/animation'); ?>
+<!-- Steps Section -->
+<?php get_template_part('template-parts/about/steps'); ?>
 <!-- Number Cards Section -->
 <?php get_template_part('template-parts/inner-page/number-cards'); ?>
 <!-- Manifesto Section -->
