@@ -9287,7 +9287,7 @@ goalSlider();
 // goal slider slider(mobile) ends here
 
 //goal replacement
-window.goal_selected = "0";
+window.goal_selected = 2;
 $(function() {
   $('.gwc.goal .goal__selection__area').on('mouseenter',function (e) {
     var selection = $(this).data('selection');

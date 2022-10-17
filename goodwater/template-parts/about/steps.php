@@ -20,35 +20,32 @@
                 </div>
                 <div class="goal__logo__container">
                     <div class="goal__logo">
-                        <img data-selection="0" src="<?php echo get_template_directory_uri() . '/images/Goodwater-7-line-icon.png'; ?>" alt=""/>
                         <img data-selection="1" src="<?php echo get_template_directory_uri() . '/images/7-line-icon-left.png'; ?>" alt="" style="display:none"/>
-                        <img data-selection="2" src="<?php echo get_template_directory_uri() . '/images/7-line-icon-middle.png'; ?>" alt="" style="display:none"/>
+                        <img data-selection="2" src="<?php echo get_template_directory_uri() . '/images/7-line-icon-middle.png'; ?>" alt="" style=""/>
                         <img data-selection="3" src="<?php echo get_template_directory_uri() . '/images/7-line-icon-right.png'; ?>" alt="" style="display:none"/>
                         <div class="goal__point point-1">01</div>
-                        <div class="goal__point point-2">02</div>
+                        <div class="goal__point point-2 selected">02</div>
                         <div class="goal__point point-3">03</div>
                         <div class="goal__selection__area point-1" data-selection="1"></div>
                         <div class="goal__selection__area point-2" data-selection="2"></div>
                         <div class="goal__selection__area point-3" data-selection="3"></div>
                     </div>
-                    <div class="goal__selection">
+                    <div class="goal__selection selected">
                         <div data-selection="1">
                             <div class="goal__point">01</div><div><h3>Genesis</h3></div>
                         </div>
-                        <div data-selection="2">
+                        <div class="selected" data-selection="2">
                             <div class="goal__point">02</div><div><h3>Capital</h3></div>
                         </div>
                         <div data-selection="3">
                             <div class="goal__point">03</div><div><h3>Collective</h3></div>
                         </div>
                     </div>
-                    <div class="goal__step__description" data-selection="0">
-                    </div>
                     <div class="goal__step__description" data-selection="1" style="display:none">
                         <div><em>Genesis</em> is the initial step in our closed-loop process.</div>
                         <div>We democratize software, systems, and wisdom for entrepreneurs everywhere. By lowering the bar of entry, we allow more promising business ideas—from more places around the world—to explore the field, learn best practices, and find their initial footing.</div>
                     </div>
-                    <div class="goal__step__description" data-selection="2" style="display:none">
+                    <div class="goal__step__description" data-selection="2">
                         <div>The next step is <em>Capital</em>, where we invest in the very best world-changing companies and entrepreneurs.</div>
                         <div>We accelerate teams that are ready to scale, and help them move from successful startups to market leaders.</div>
                     </div>
