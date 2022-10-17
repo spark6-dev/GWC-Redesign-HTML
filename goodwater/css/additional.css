@@ -1872,6 +1872,9 @@ footer.footer-text {
 .gwc.goal .goal__logo .goal__point.selected {
   background-color: #5dbdf0
 }
+.gwc.goal .goal__logo .goal__point.hover {
+  background-color: #5dbdf0
+}
 
 .gwc.goal .goal__selection {
   display: flex;
@@ -1934,7 +1937,14 @@ footer.footer-text {
   font-style: italic;
   color: #5dbdf0
 }
+.gwc.goal .goal__selection > .hover h3 {
+  font-style: italic;
+  color: #5dbdf0
+}
 .gwc.goal .goal__selection > .selected .goal__point {
+  background-color: #5dbdf0
+}
+.gwc.goal .goal__selection > .hover .goal__point {
   background-color: #5dbdf0
 }
 
