@@ -1,4 +1,4 @@
-<div class="gwc banner banner--inner company-banner <?php echo esc_html(get_field('banner_class_name'));?>">
+<div class="gwc banner banner--inner <?php echo esc_html(get_field('banner_class_name'));?>">
     <div class="banner__wrap">
         <div class="container">
             <span class="l-banner"><?php echo esc_html(get_field('banner_label'));?></span>
