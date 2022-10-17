@@ -1920,3 +1920,23 @@ footer.footer-text {
   color: #4A5C76;
   font-family: "Untitled Sans", sans-serif;
 }
+
+@media screen and (min-width: 991px) {
+  .about .gwc.goal .goal__wrapper .consumer__wrap .consumer__col:first-child h3 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+  .about .gwc.consumer--about .consumer__wrap .consumer__col:first-child {
+    width: 60%;
+    flex: 0 0 60%;
+    padding-right: 4.312rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .gwc.goal .goal__wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
