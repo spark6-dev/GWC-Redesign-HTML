@@ -10,7 +10,7 @@
 get_header();?>
     
 <!-- Banner Section -->
-<?php get_template_part('template-parts/inner-page/banner',null,array('class'=>'company-banner lake')); ?>
+<?php get_template_part('template-parts/inner-page/banner'); ?>
 <!-- Two column Content Section -->
 <?php get_template_part('template-parts/inner-page/two-column-content'); ?>
 <!-- Company Stats Section -->

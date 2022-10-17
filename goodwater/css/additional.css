@@ -1254,6 +1254,30 @@ footer.footer-text {
   .inner-page.lake .gwc.header .header__nav ul li a:hover {
     color: #ffffff;
   }
+
+  .inner-page.lawn .gwc.header {
+    background-color: #72CC7D;
+  }
+
+  .inner-page.lawn .gwc.header .header__nav {
+    background-color: #72CC7D;
+  }
+
+  .inner-page.lawn .gwc.header .header__nav ul li a:hover {
+    color: #ffffff;
+  }
+
+  .inner-page.violet .gwc.header {
+    background-color: #9599FF;
+  }
+
+  .inner-page.violet .gwc.header .header__nav {
+    background-color: #9599FF;
+  }
+
+  .inner-page.violet .gwc.header .header__nav ul li a:hover {
+    color: #ffffff;
+  }
 }
 
 .gwc.banner--inner.lake {
@@ -1261,6 +1285,19 @@ footer.footer-text {
   background-image: unset;
   background-size: unset;
 }
+
+.gwc.banner--inner.lawn {
+  background-color: #72CC7D;
+  background-image: unset;
+  background-size: unset;
+}
+
+.gwc.banner--inner.violet {
+  background-color: #9599FF;
+  background-image: unset;
+  background-size: unset;
+}
+
 
 .gwc.banner--inner.company-banner {
   padding-bottom: 0;
