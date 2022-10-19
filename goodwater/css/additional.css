@@ -1895,7 +1895,6 @@ footer.footer-text {
   width: 100%;
   border-bottom: solid 4px #4A5C76;
   display: flex;
-  gap: 0.875rem;
   justify-content: center;
 }
 
@@ -1918,7 +1917,9 @@ footer.footer-text {
 }
 
 .gwc.goal .goal__selection .goal__point {
-  transform: translateY(17%);
+  transform: unset;
+  margin-top: 7px;
+  margin-right: 0.875rem;
 }
 
 .gwc.goal .goal__selection__area  {
@@ -1940,11 +1941,9 @@ footer.footer-text {
 }
 
 .gwc.goal .goal__selection > .selected h3 {
-  font-style: italic;
   color: #5dbdf0
 }
 .gwc.goal .goal__selection > .hover h3 {
-  font-style: italic;
   color: #5dbdf0
 }
 .gwc.goal .goal__selection > .selected .goal__point {
