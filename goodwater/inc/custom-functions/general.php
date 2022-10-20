@@ -73,7 +73,13 @@
         $meta ='';
 
             $title = get_the_title();
-            if(!$title){$title = get_bloginfo('name');}
+            if(!$title){
+                if (is_single()) {
+                    $title = get_bloginfo('name');
+                } else {
+                    $title = single_cat_title('', false);
+                }
+            }
             if(is_single()){$type = 'article';} else {$type = 'page';}
             $meta .= '<meta property="og:title" content="'.$title.'" />';
             $meta .= '<meta property="og:url" content="'.get_permalink().'"/>';

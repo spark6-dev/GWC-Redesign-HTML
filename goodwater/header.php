@@ -20,7 +20,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="keywords" content="Goodwater Capital">
     <meta name="description" content="Goodwater Capital">
-	<?php echo generate_ogg(); ?>	
     <meta name="format-detection" content="telephone=no">
 
 	<?php wp_head(); ?>
