@@ -747,3 +747,30 @@ function goalSlider() {
 }
 goalSlider();
 // goal slider slider(mobile) ends here
+
+
+//goal slider desktop
+$(function() {
+  $('.gwc.goal .goal__slider__desktop').slick({
+    autoplay: true,
+    fade: true,
+    pauseOnHover: true,
+  });
+
+  $('.gwc.goal .goal__selection__area').on('click', function (e) {
+    var selection = $(this).data('selection');
+    $('.gwc.goal .goal__slider__desktop').slick('slickGoTo', selection - 1);
+  })
+
+  $('.gwc.goal .goal__selection__area').on('mouseenter',function (e) {
+    var selection = $(this).data('selection');
+    $(`.gwc.goal .goal__point.point-${selection}`).addClass('hover');
+    $(`.gwc.goal .goal__selection > [data-selection="${selection}"]`).addClass('hover');
+  });
+  $('.gwc.goal .goal__selection__area').on('mouseleave',function (e) {
+    var selection = $(this).data('selection');
+    $(`.gwc.goal .goal__point.point-${selection}`).removeClass('hover');
+    $(`.gwc.goal .goal__selection > [data-selection="${selection}"]`).removeClass('hover');
+  });
+});
+//
