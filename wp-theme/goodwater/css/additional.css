@@ -902,7 +902,9 @@ footer.footer-text {
   background-color: #ffffff;
 }
 
-
+.gwc.model {
+  padding-top: 2.5rem;
+}
 @media screen and (min-width: 576px) and (max-width: 990px) {
   .gwc.model {
     padding: 3rem 0 3rem;
@@ -1997,7 +1999,7 @@ footer.footer-text {
 
 @media screen and (max-width: 575px) {
   .gwc.model .model__heading {
-    padding-bottom: 1.675rem;
+    padding-bottom: 1.875rem;
   }
 }
 
