@@ -891,18 +891,17 @@ footer.footer-text {
   }
 }
 
-@media screen and (min-width: 576px) {
-  .gwc.model .model__heading h3 {
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 700;
-  }
-  .gwc.model .model__heading h3::before {
-    background-color: #ffffff;
-  }
 
+.gwc.model .model__heading h3 {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
 }
+.gwc.model .model__heading h3::before {
+  background-color: #ffffff;
+}
+
 
 @media screen and (min-width: 576px) and (max-width: 990px) {
   .gwc.model {
@@ -1995,3 +1994,40 @@ footer.footer-text {
     padding-bottom: 0;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .gwc.model .model__heading {
+    padding-bottom: 1.675rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .gwc.delivery .delivery__slider .delivery__tab .delivery__content .delivery__logo {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .gwc.delivery .delivery__slider .delivery__tab .delivery__content .delivery__logo.everly-health img {
+    max-width: 13rem;
+  }
+  .gwc.delivery .delivery__slider .delivery__tab .delivery__content .delivery__logo.monzo img {
+    max-width: 9.5rem;
+  }
+  .gwc.delivery .delivery__slider .delivery__tab .delivery__content .delivery__logo.getir img {
+    max-width: 6.5rem;
+  }
+  .gwc.delivery .delivery__slider .delivery__tab .delivery__content .delivery__logo.irl img {
+    max-width: 3.5rem;
+  }
+  .gwc.delivery .delivery__slider .delivery__tab .delivery__content .delivery__logo.momo img {
+    max-width: 3.5rem;
+  }
+  .gwc.delivery .delivery__slider .delivery__tab .delivery__content p {
+    max-width: 80%;
+    margin: auto;
+    padding-top: 1.375rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
