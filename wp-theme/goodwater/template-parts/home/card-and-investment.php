@@ -1,70 +1,70 @@
 <div class="gwc investment">
     <div class="container">
-        <?php if( have_rows('company_card') ):?>
-            <div class="healthcare__slider"> 
-                <div class="gwc healthcare healthcare--slider">
-                    <div class="healthcare__slider"> 
-                        <div class="healthcare__cards">
-                            <?php while( have_rows('company_card') ) : the_row();
-                                $featured_company = get_sub_field('select_featured_company');
-                                if( $featured_company ):
-                                    $bg_color = get_sub_field('card_bg');
-                                    $label    = get_sub_field('card_company_label');
-                                    $year     = get_sub_field('card_company_year');
-                                    $loc      = get_field('locationcountrystate', $featured_company->ID);
-                                    $title    = $featured_company->post_title;
-                                    $content  = $featured_company->post_content;
-                                    $tags     = get_the_terms( $featured_company->ID, 'company_category' ); 
-                                    if ( ! empty( $tags ) ) {
-                                        $tag = $tags[0]->name;   
-                                    }?>
-                                    <div class="healthcare__tab">
-                                        <div class="healthcare__card <?php echo esc_attr($bg_color); ?>">
-                                            <?php if($tag):?>
-                                                <span class="l-tag"><?php echo esc_html($tag);?></span>
-                                            <?php endif;?>
-                                            <?php if($loc):?>
-                                                <span class="l-tag"><?php echo esc_html($loc);?></span>
-                                            <?php endif;?>
-                                            <div class="healthcare__head"> 
-                                                <h2><?php echo esc_html($title);?></h2>
-                                            </div>
-                                            <div class="healthcare__content"> 
-                                                <?php echo apply_filters('the_content', $content); ?>
-                                                <?php if($label):?>
-                                                    <div class="healthcare__button"> 
-                                                        <p><?php echo esc_html($label);?></p>
-                                                    </div>
-                                                <?php endif;?>
-                                            </div>
-                                            <div class="healthcare__nav"> 
-                                                <div class="healthcare__slider-arrow">
-                                                    <button class="healthcare__arrow healthcare__arrow--prev" role="button" aria-lebel="Previous">
-                                                        <svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41142 1.32353L13.2122 7.12435M13.2122 7.12435L7.24474 12.7536M13.2122 7.12435L0.787908 6.94284" stroke="white" stroke-width="1.25"></path>
-                                                        </svg>
-                                                    </button>
-                                                    <button class="healthcare__arrow healthcare__arrow--next" role="button" aria-lebel="Next">
-                                                        <svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M7.41142 1.32353L13.2122 7.12435M13.2122 7.12435L7.24474 12.7536M13.2122 7.12435L0.787908 6.94284" stroke="white" stroke-width="1.25"></path>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                                <?php if($year):?>
-                                                    <div class="healthcare__year"> 
-                                                        <h4><?php echo esc_html($year);?></h4>
-                                                    </div>
-                                                <?php endif;?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php endif;
-                            endwhile;?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php endif;?>
+<!--        --><?php //if( have_rows('company_card') ):?>
+<!--            <div class="healthcare__slider"> -->
+<!--                <div class="gwc healthcare healthcare--slider">-->
+<!--                    <div class="healthcare__slider"> -->
+<!--                        <div class="healthcare__cards">-->
+<!--                            --><?php //while( have_rows('company_card') ) : the_row();
+//                                $featured_company = get_sub_field('select_featured_company');
+//                                if( $featured_company ):
+//                                    $bg_color = get_sub_field('card_bg');
+//                                    $label    = get_sub_field('card_company_label');
+//                                    $year     = get_sub_field('card_company_year');
+//                                    $loc      = get_field('locationcountrystate', $featured_company->ID);
+//                                    $title    = $featured_company->post_title;
+//                                    $content  = $featured_company->post_content;
+//                                    $tags     = get_the_terms( $featured_company->ID, 'company_category' );
+//                                    if ( ! empty( $tags ) ) {
+//                                        $tag = $tags[0]->name;
+//                                    }?>
+<!--                                    <div class="healthcare__tab">-->
+<!--                                        <div class="healthcare__card --><?php //echo esc_attr($bg_color); ?><!--">-->
+<!--                                            --><?php //if($tag):?>
+<!--                                                <span class="l-tag">--><?php //echo esc_html($tag);?><!--</span>-->
+<!--                                            --><?php //endif;?>
+<!--                                            --><?php //if($loc):?>
+<!--                                                <span class="l-tag">--><?php //echo esc_html($loc);?><!--</span>-->
+<!--                                            --><?php //endif;?>
+<!--                                            <div class="healthcare__head"> -->
+<!--                                                <h2>--><?php //echo esc_html($title);?><!--</h2>-->
+<!--                                            </div>-->
+<!--                                            <div class="healthcare__content"> -->
+<!--                                                --><?php //echo apply_filters('the_content', $content); ?>
+<!--                                                --><?php //if($label):?>
+<!--                                                    <div class="healthcare__button"> -->
+<!--                                                        <p>--><?php //echo esc_html($label);?><!--</p>-->
+<!--                                                    </div>-->
+<!--                                                --><?php //endif;?>
+<!--                                            </div>-->
+<!--                                            <div class="healthcare__nav"> -->
+<!--                                                <div class="healthcare__slider-arrow">-->
+<!--                                                    <button class="healthcare__arrow healthcare__arrow--prev" role="button" aria-lebel="Previous">-->
+<!--                                                        <svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                                            <path d="M7.41142 1.32353L13.2122 7.12435M13.2122 7.12435L7.24474 12.7536M13.2122 7.12435L0.787908 6.94284" stroke="white" stroke-width="1.25"></path>-->
+<!--                                                        </svg>-->
+<!--                                                    </button>-->
+<!--                                                    <button class="healthcare__arrow healthcare__arrow--next" role="button" aria-lebel="Next">-->
+<!--                                                        <svg width="15" height="14" viewbox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                                            <path d="M7.41142 1.32353L13.2122 7.12435M13.2122 7.12435L7.24474 12.7536M13.2122 7.12435L0.787908 6.94284" stroke="white" stroke-width="1.25"></path>-->
+<!--                                                        </svg>-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                                --><?php //if($year):?>
+<!--                                                    <div class="healthcare__year"> -->
+<!--                                                        <h4>--><?php //echo esc_html($year);?><!--</h4>-->
+<!--                                                    </div>-->
+<!--                                                --><?php //endif;?>
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                --><?php //endif;
+//                            endwhile;?>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        --><?php //endif;?>
         <div class="investment__slider">
             <div class="investment__head"> 
                 <h2> 
